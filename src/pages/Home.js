@@ -4,7 +4,7 @@ import { Col, Row, Container } from "react-bootstrap";
 const Home = () => {
   return (
     <Container>
-      <Row>
+      <Row className="text-center">
         <Col>
           <h1>Home Page</h1>
         </Col>
