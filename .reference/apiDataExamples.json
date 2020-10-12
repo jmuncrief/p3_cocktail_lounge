@@ -1,0 +1,2401 @@
+// Lookup full cocktail details by id (random returns same data structure)
+// https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11000
+{
+    "drinks": [
+        {
+            "idDrink": "11000",
+            "strDrink": "Mojito",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": "IBA,ContemporaryClassic,Alcoholic,USA",
+            "strVideo": null,
+            "strCategory": "Cocktail",
+            "strIBA": "Contemporary Classics",
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Highball glass",
+            "strInstructions": "Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Minzblätter mit Zucker und Limettensaft verrühren. Füge einen Spritzer Sodawasser hinzu und fülle das Glas mit gebrochenem Eis. Den Rum eingießen und mit Sodawasser übergießen. Garnieren und mit einem Strohhalm servieren.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/3z6xdi1589574603.jpg",
+            "strIngredient1": "Light rum",
+            "strIngredient2": "Lime",
+            "strIngredient3": "Sugar",
+            "strIngredient4": "Mint",
+            "strIngredient5": "Soda water",
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "2-3 oz ",
+            "strMeasure2": "Juice of 1 ",
+            "strMeasure3": "2 tsp ",
+            "strMeasure4": "2-4 ",
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "Yes",
+            "dateModified": "2016-11-04 09:17:09"
+        }
+    ]
+}
+
+// Search by ingredient
+// https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=lime
+{
+    "drinks": [
+        {
+            "strDrink": "After Dinner Cocktail",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vtytxq1483387578.jpg",
+            "idDrink": "11010"
+        },
+        {
+            "strDrink": "Amaretto Mist",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/utpxxq1483388370.jpg",
+            "idDrink": "11026"
+        },
+        {
+            "strDrink": "Bible Belt",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/6bec6v1503563675.jpg",
+            "idDrink": "16986"
+        },
+        {
+            "strDrink": "Caipirinha",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/jgvn7p1582484435.jpg",
+            "idDrink": "11202"
+        },
+        {
+            "strDrink": "Caipirissima",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yd47111503565515.jpg",
+            "idDrink": "13206"
+        },
+        {
+            "strDrink": "California Lemonade",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/q5z4841582484168.jpg",
+            "idDrink": "11205"
+        },
+        {
+            "strDrink": "Corn n Oil",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/pk6dwi1592767243.jpg",
+            "idDrink": "17830"
+        },
+        {
+            "strDrink": "Cosmopolitan Martini",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/upxxpq1439907580.jpg",
+            "idDrink": "14133"
+        },
+        {
+            "strDrink": "Cuba Libra",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/ck6d0p1504388696.jpg",
+            "idDrink": "13751"
+        },
+        {
+            "strDrink": "Cuba Libre",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/uuxsrr1473201663.jpg",
+            "idDrink": "11288"
+        },
+        {
+            "strDrink": "Daiquiri",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg",
+            "idDrink": "11006"
+        },
+        {
+            "strDrink": "Dark Caipirinha",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/uwstrx1472406058.jpg",
+            "idDrink": "17177"
+        },
+        {
+            "strDrink": "Dragonfly",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/uc63bh1582483589.jpg",
+            "idDrink": "11320"
+        },
+        {
+            "strDrink": "Gin And Tonic",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/z0omyp1582480573.jpg",
+            "idDrink": "11403"
+        },
+        {
+            "strDrink": "Happy Skipper",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/42w2g41487602448.jpg",
+            "idDrink": "12766"
+        },
+        {
+            "strDrink": "Ipamena",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yswuwp1469090992.jpg",
+            "idDrink": "17176"
+        },
+        {
+            "strDrink": "Jack Rose Cocktail",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/uuqqrv1439907068.jpg",
+            "idDrink": "11542"
+        },
+        {
+            "strDrink": "Limeade",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/5jdp5r1487603680.jpg",
+            "idDrink": "12704"
+        },
+        {
+            "strDrink": "Long vodka",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/9179i01503565212.jpg",
+            "idDrink": "13196"
+        },
+        {
+            "strDrink": "Mojito",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/3z6xdi1589574603.jpg",
+            "idDrink": "11000"
+        },
+        {
+            "strDrink": "Quarter Deck Cocktail",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qrwvps1478963017.jpg",
+            "idDrink": "11985"
+        },
+        {
+            "strDrink": "Scotch Sour",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/0dnb6k1504890436.jpg",
+            "idDrink": "12158"
+        },
+        {
+            "strDrink": "White Wine Sangria",
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/hnuod91587851576.jpg",
+            "idDrink": "178326"
+        }
+    ]
+}
+
+// Search cocktail by name
+// https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
+{
+    "drinks": [
+        {
+            "idDrink": "11007",
+            "strDrink": "Margarita",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": "IBA,ContemporaryClassic",
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": "Contemporary Classics",
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Cocktail glass",
+            "strInstructions": "Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Reiben Sie den Rand des Glases mit der Limettenscheibe, damit das Salz daran haftet. Achten Sie darauf, dass nur der äußere Rand angefeuchtet wird und streuen Sie das Salz darauf. Das Salz sollte sich auf den Lippen des Genießers befinden und niemals in den Cocktail einmischen. Die anderen Zutaten mit Eis schütteln und vorsichtig in das Glas geben.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg",
+            "strIngredient1": "Tequila",
+            "strIngredient2": "Triple sec",
+            "strIngredient3": "Lime juice",
+            "strIngredient4": "Salt",
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 1/2 oz ",
+            "strMeasure2": "1/2 oz ",
+            "strMeasure3": "1 oz ",
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "Yes",
+            "dateModified": "2015-08-18 14:42:59"
+        },
+        {
+            "idDrink": "11118",
+            "strDrink": "Blue Margarita",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Cocktail glass",
+            "strInstructions": "Rub rim of cocktail glass with lime juice. Dip rim in coarse salt. Shake tequila, blue curacao, and lime juice with ice, strain into the salt-rimmed glass, and serve.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Den Rand des Cocktailglases mit Limettensaft einreiben. Den Rand in grobes Salz tauchen. Tequila, blauen Curacao und Limettensaft mit Eis schütteln, in das mit Salz umhüllte Glas abseihen und servieren.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/bry4qh1582751040.jpg",
+            "strIngredient1": "Tequila",
+            "strIngredient2": "Blue Curacao",
+            "strIngredient3": "Lime juice",
+            "strIngredient4": "Salt",
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 1/2 oz ",
+            "strMeasure2": "1 oz ",
+            "strMeasure3": "1 oz ",
+            "strMeasure4": "Coarse ",
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "Yes",
+            "dateModified": "2015-08-18 14:51:53"
+        },
+        {
+            "idDrink": "17216",
+            "strDrink": "Tommy's Margarita",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": "IBA,NewEra",
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": "New Era Drinks",
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Old-Fashioned glass",
+            "strInstructions": "Shake and strain into a chilled cocktail glass.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Schütteln und in ein gekühltes Cocktailglas abseihen.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/loezxn1504373874.jpg",
+            "strIngredient1": "Tequila",
+            "strIngredient2": "Lime Juice",
+            "strIngredient3": "Agave syrup",
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "4.5 cl",
+            "strMeasure2": "1.5 cl",
+            "strMeasure3": "2 spoons",
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2017-09-02 18:37:54"
+        },
+        {
+            "idDrink": "16158",
+            "strDrink": "Whitecap Margarita",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Other/Unknown",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Margarita/Coupette glass",
+            "strInstructions": "Place all ingredients in a blender and blend until smooth. This makes one drink.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Alle Zutaten in einen Mixer geben und mischen.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/srpxxp1441209622.jpg",
+            "strIngredient1": "Ice",
+            "strIngredient2": "Tequila",
+            "strIngredient3": "Cream of coconut",
+            "strIngredient4": "Lime juice",
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 cup ",
+            "strMeasure2": "2 oz ",
+            "strMeasure3": "1/4 cup ",
+            "strMeasure4": "3 tblsp fresh ",
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2015-09-02 17:00:22"
+        },
+        {
+            "idDrink": "12322",
+            "strDrink": "Strawberry Margarita",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Cocktail glass",
+            "strInstructions": "Rub rim of cocktail glass with lemon juice and dip rim in salt. Shake schnapps, tequila, triple sec, lemon juice, and strawberries with ice, strain into the salt-rimmed glass, and serve.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Cocktailglasrand mit Zitronensaft und Tauchrand in Salz wenden. Schnaps, Tequila, Triple-Sec, Zitronensaft und Erdbeeren mit Eis schütteln, in das salzige Glas sieben und servieren.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/tqyrpw1439905311.jpg",
+            "strIngredient1": "Strawberry schnapps",
+            "strIngredient2": "Tequila",
+            "strIngredient3": "Triple sec",
+            "strIngredient4": "Lemon juice",
+            "strIngredient5": "Strawberries",
+            "strIngredient6": "Salt",
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1/2 oz ",
+            "strMeasure2": "1 oz ",
+            "strMeasure3": "1/2 oz ",
+            "strMeasure4": "1 oz ",
+            "strMeasure5": "1 oz ",
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2015-08-18 14:41:51"
+        },
+        {
+            "idDrink": "178332",
+            "strDrink": "Smashed Watermelon Margarita",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Cocktail",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Collins glass",
+            "strInstructions": "In a mason jar muddle the watermelon and 5 mint leaves together into a puree and strain. Next add the grapefruit juice, juice of half a lime and the tequila as well as some ice. Put a lid on the jar and shake. Pour into a glass and add more ice. Garnish with fresh mint and a small slice of watermelon.",
+            "strInstructionsES": null,
+            "strInstructionsDE": null,
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/dztcv51598717861.jpg",
+            "strIngredient1": "Watermelon",
+            "strIngredient2": "Mint",
+            "strIngredient3": "Grapefruit Juice",
+            "strIngredient4": "Lime",
+            "strIngredient5": "Tequila",
+            "strIngredient6": "Watermelon",
+            "strIngredient7": "Mint",
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1/2 cup",
+            "strMeasure2": "5",
+            "strMeasure3": "1/3 Cup",
+            "strMeasure4": "Juice of 1/2",
+            "strMeasure5": "1 shot",
+            "strMeasure6": "Garnish with",
+            "strMeasure7": "Garnish with",
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": null
+        }
+    ]
+}
+
+// Lookup ingredient by ID
+// https://www.thecocktaildb.com/api/json/v1/1/lookup.php?iid=552
+{
+    "ingredients": [
+        {
+            "idIngredient": "552",
+            "strIngredient": "Elderflower cordial",
+            "strDescription": "Elderflower cordial is a soft drink made largely from a refined sugar and water solution and uses the flowers of the European elderberry. Historically the cordial has been popular in North Western Europe where it has a strong Victorian heritage.",
+            "strType": "Cordial",
+            "strAlcohol": null,
+            "strABV": null
+        }
+    ]
+}
+
+// Search ingredient by name
+// https://www.thecocktaildb.com/api/json/v1/1/search.php?i=vodka
+{
+    "ingredients": [
+        {
+            "idIngredient": "1",
+            "strIngredient": "Vodka",
+            "strDescription": "Vodka is a distilled beverage composed primarily of water and ethanol, sometimes with traces of impurities and flavorings. Traditionally, vodka is made by the distillation of fermented cereal grains or potatoes, though some modern brands use other substances, such as fruits or sugar.\r\n\r\nSince the 1890s, the standard Polish, Russian, Belarusian, Ukrainian, Estonian, Latvian, Lithuanian and Czech vodkas are 40% alcohol by volume ABV (80 US proof), a percentage that is widely misattributed to Dmitri Mendeleev. The European Union has established a minimum of 37.5% ABV for any \"European vodka\" to be named as such. Products sold as \"vodka\" in the United States must have a minimum alcohol content of 40%. Even with these loose restrictions, most vodka sold contains 40% ABV. For homemade vodkas and distilled beverages referred to as \"moonshine\", see moonshine by country.\r\n\r\nVodka is traditionally drunk neat (not mixed with any water, ice, or other mixer), though it is often served chilled in the vodka belt countries (Belarus, Estonia, Finland, Iceland, Latvia, Lithuania, Norway, Poland, Russia, Sweden, Ukraine). It is also commonly used in cocktails and mixed drinks, such as the vodka martini, Cosmopolitan, vodka tonic, Screwdriver, Greyhound, Black or White Russian, Moscow Mule, and Bloody Mary.\r\n\r\nScholars debate the beginnings of vodka. It is a contentious issue because very little historical material is available. For many centuries, beverages differed significantly compared to the vodka of today, as the spirit at that time had a different flavor, color and smell, and was originally used as medicine. It contained little alcohol, an estimated maximum of about 14%, as only this amount can be attained by natural fermentation. The still, allowing for distillation (\"burning of wine\"), increased purity, and increased alcohol content, was invented in the 8th century.\r\n\r\nA common property of the vodkas produced in the United States and Europe is the extensive use of filtration prior to any additional processing including the addition of flavorants. Filtering is sometimes done in the still during distillation, as well as afterwards, where the distilled vodka is filtered through activated charcoal and other media to absorb trace amounts of substances that alter or impart off-flavors to the vodka. However, this is not the case in the traditional vodka-producing nations, so many distillers from these countries prefer to use very accurate distillation but minimal filtering, thus preserving the unique flavors and characteristics of their products.\r\n\r\nThe master distiller is in charge of distilling the vodka and directing its filtration, which includes the removal of the \"fore-shots\", \"heads\" and \"tails\". These components of the distillate contain flavor compounds such as ethyl acetate and ethyl lactate (heads) as well as the fusel oils (tails) that impact the usually desired clean taste of vodka. Through numerous rounds of distillation, or the use of a fractioning still, the taste is modified and clarity is increased. In contrast, distillery process for liquors such as whiskey, rum, and baijiu allow portions of the \"heads\" and \"tails\" to remain, giving them their unique flavors.\r\n\r\nRepeated distillation of vodka will make its ethanol level much higher than is acceptable to most end users, whether legislation determines strength limits or not. Depending on the distillation method and the technique of the stillmaster, the final filtered and distilled vodka may have as much as 95–96% ethanol. As such, most vodka is diluted with water prior to bottling.\r\n\r\nPolish distilleries make a very pure (96%, 192 proof, formerly also 98%) rectified spirit (Polish language: spirytus rektyfikowany). Technically a form of vodka, it is sold in liquor stores rather than pharmacies. Similarly, the German market often carries German, Hungarian, Polish, and Ukrainian-made varieties of vodka of 90 to 95% ABV. A Bulgarian vodka, Balkan 176°, has an 88% alcohol content. Everclear, an American brand, is also sold at 95% ABV.",
+            "strType": "Vodka",
+            "strAlcohol": "Yes",
+            "strABV": "40"
+        }
+    ]
+}
+
+// List all cocktails by first letter
+// https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a
+{
+    "drinks": [
+        {
+            "idDrink": "17222",
+            "strDrink": "A1",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Cocktail",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Cocktail glass",
+            "strInstructions": "Pour all ingredients into a cocktail shaker, mix and serve over ice into a chilled glass.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Alle Zutaten in einen Cocktailshaker geben, mischen und über Eis in ein gekühltes Glas servieren.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg",
+            "strIngredient1": "Gin",
+            "strIngredient2": "Grand Marnier",
+            "strIngredient3": "Lemon Juice",
+            "strIngredient4": "Grenadine",
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 3/4 shot ",
+            "strMeasure2": "1 Shot ",
+            "strMeasure3": "1/4 Shot",
+            "strMeasure4": "1/8 Shot",
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2017-09-07 21:42:09"
+        },
+        {
+            "idDrink": "13501",
+            "strDrink": "ABC",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Shot",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Shot glass",
+            "strInstructions": "Layered in a shot glass.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Schichtaufbau in einem Schnapsglas.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/tqpvqp1472668328.jpg",
+            "strIngredient1": "Amaretto",
+            "strIngredient2": "Baileys irish cream",
+            "strIngredient3": "Cognac",
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1/3 ",
+            "strMeasure2": "1/3 ",
+            "strMeasure3": "1/3 ",
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2016-08-31 19:32:08"
+        },
+        {
+            "idDrink": "17225",
+            "strDrink": "Ace",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Cocktail",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Martini Glass",
+            "strInstructions": "Shake all the ingredients in a cocktail shaker and ice then strain in a cold glass.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Alle Zutaten in einem Cocktailshaker mit Eis schütteln und dann in einem kalten Glas abseihen.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/l3cd7f1504818306.jpg",
+            "strIngredient1": "Gin",
+            "strIngredient2": "Grenadine",
+            "strIngredient3": "Heavy cream",
+            "strIngredient4": "Milk",
+            "strIngredient5": "Egg White",
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "2 shots ",
+            "strMeasure2": "1/2 shot ",
+            "strMeasure3": "1/2 shot ",
+            "strMeasure4": "1/2 shot",
+            "strMeasure5": "1/2 Fresh",
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2017-09-07 22:05:06"
+        },
+        {
+            "idDrink": "17837",
+            "strDrink": "Adam",
+            "strDrinkAlternate": null,
+            "strDrinkES": "Adam",
+            "strDrinkDE": "Adam",
+            "strDrinkFR": "Adam",
+            "strDrinkZH-HANS": "亚当",
+            "strDrinkZH-HANT": "亞當",
+            "strTags": "Alcoholic,Holiday",
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Cocktail glass",
+            "strInstructions": "In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "In einem Shaker, der halb mit Eiswürfeln gefüllt ist, alle Zutaten vermengen. Gut schütteln. In ein Cocktailglas abseihen.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/v0at4i1582478473.jpg",
+            "strIngredient1": "Dark rum",
+            "strIngredient2": "Lemon juice",
+            "strIngredient3": "Grenadine",
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "2 oz ",
+            "strMeasure2": "1 oz ",
+            "strMeasure3": "1 tsp ",
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "Yes",
+            "dateModified": "2016-09-02 11:29:29"
+        },
+        {
+            "idDrink": "13938",
+            "strDrink": "AT&T",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Highball Glass",
+            "strInstructions": "Pour Vodka and Gin over ice, add Tonic and Stir",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Wodka und Gin über das Eis gießen, Tonic hinzufügen und umrühren.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/rhhwmp1493067619.jpg",
+            "strIngredient1": "Absolut Vodka",
+            "strIngredient2": "Gin",
+            "strIngredient3": "Tonic water",
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 oz ",
+            "strMeasure2": "1 oz ",
+            "strMeasure3": "4 oz ",
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2017-04-24 22:00:19"
+        },
+        {
+            "idDrink": "14610",
+            "strDrink": "ACID",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Shot",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Shot glass",
+            "strInstructions": "Poor in the 151 first followed by the 101 served with a Coke or Dr Pepper chaser.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Gering den 151 gefolgt von der 101, die mit einer Cola oder Dr. Pepper Chaser serviert wird.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/xuxpxt1479209317.jpg",
+            "strIngredient1": "151 proof rum",
+            "strIngredient2": "Wild Turkey",
+            "strIngredient3": null,
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 oz Bacardi ",
+            "strMeasure2": "1 oz ",
+            "strMeasure3": null,
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2016-11-15 11:28:37"
+        },
+        {
+            "idDrink": "17833",
+            "strDrink": "A. J.",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Cocktail glass",
+            "strInstructions": "Shake ingredients with ice, strain into a cocktail glass, and serve.",
+            "strInstructionsES": null,
+            "strInstructionsDE": null,
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/l74qo91582480316.jpg",
+            "strIngredient1": "Applejack",
+            "strIngredient2": "Grapefruit juice",
+            "strIngredient3": null,
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 1/2 oz ",
+            "strMeasure2": "1 oz ",
+            "strMeasure3": null,
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "Yes",
+            "dateModified": "2016-09-02 11:16:58"
+        },
+        {
+            "idDrink": "17839",
+            "strDrink": "Affair",
+            "strDrinkAlternate": null,
+            "strDrinkES": "Asunto",
+            "strDrinkDE": "Affäre",
+            "strDrinkFR": "Affaire",
+            "strDrinkZH-HANS": "事务",
+            "strDrinkZH-HANT": "事務",
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Highball glass",
+            "strInstructions": "Pour schnapps, orange juice, and cranberry juice over ice in a highball glass. Top with club soda and serve.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Gießen Sie Schnaps, Orangensaft und Cranberrysaft über Eis in ein Highball-Glas. Mit Club-Soda überziehen und servieren.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/h5za6y1582477994.jpg",
+            "strIngredient1": "Strawberry schnapps",
+            "strIngredient2": "Orange juice",
+            "strIngredient3": "Cranberry juice",
+            "strIngredient4": "Club soda",
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "2 oz ",
+            "strMeasure2": "2 oz ",
+            "strMeasure3": "2 oz ",
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "Yes",
+            "dateModified": "2016-09-01 10:05:34"
+        },
+        {
+            "idDrink": "15106",
+            "strDrink": "Apello",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Other/Unknown",
+            "strIBA": null,
+            "strAlcoholic": "Non alcoholic",
+            "strGlass": "Collins Glass",
+            "strInstructions": "Stirr. Grnish with maraschino cherry.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Rühren. Mit Maraschinokirsche garnieren.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/uptxtv1468876415.jpg",
+            "strIngredient1": "Orange juice",
+            "strIngredient2": "Grapefruit juice",
+            "strIngredient3": "Apple juice",
+            "strIngredient4": "Maraschino cherry",
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "4 cl ",
+            "strMeasure2": "3 cl ",
+            "strMeasure3": "1 cl ",
+            "strMeasure4": "1 ",
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2016-07-18 22:13:35"
+        },
+        {
+            "idDrink": "15266",
+            "strDrink": "Avalon",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Highball glass",
+            "strInstructions": "Fill a tall glass with ice. Layer the Finlandia Vodka, lemon and apple juices, Pisang Ambon, and top up with lemonade. Stir slightly and garnish with a spiralled cucumber skin and a red cherry. The cucumber provides zest and looks attractive. This drink, created by Timo Haimi, took first prize in the 1991 Finlandia Vodka Long Drink Competition.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Füllen Sie ein hohes Glas mit Eis. Legen Sie den Finlandia Wodka, Zitronen- und Apfelsäfte, Pisang Ambon und geben Sie Limonade dazu. Leicht umrühren und mit einer spiralförmigen Gurkenhaut und einer roten Kirsche garnieren. Die Gurke sorgt für Schärfe und sieht attraktiv aus. Dieses von Timo Haimi kreierte Getränk erhielt 1991 den ersten Preis beim Finlandia Wodka Long Drink Wettbewerb.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/3k9qic1493068931.jpg",
+            "strIngredient1": "Vodka",
+            "strIngredient2": "Pisang Ambon",
+            "strIngredient3": "Apple juice",
+            "strIngredient4": "Lemon juice",
+            "strIngredient5": "Lemonade",
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "3 parts",
+            "strMeasure2": "1 part ",
+            "strMeasure3": "6 parts ",
+            "strMeasure4": "1 1/2 part ",
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2017-04-24 22:22:11"
+        },
+        {
+            "idDrink": "17835",
+            "strDrink": "Abilene",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Highball glass",
+            "strInstructions": "Pour all of the ingredients into a highball glass almost filled with ice cubes. Stir well.",
+            "strInstructionsES": null,
+            "strInstructionsDE": null,
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/smb2oe1582479072.jpg",
+            "strIngredient1": "Dark rum",
+            "strIngredient2": "Peach nectar",
+            "strIngredient3": "Orange juice",
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 1/2 oz ",
+            "strMeasure2": "2 oz ",
+            "strMeasure3": "3 oz ",
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "Yes",
+            "dateModified": "2016-04-29 09:44:25"
+        },
+        {
+            "idDrink": "11023",
+            "strDrink": "Almeria",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Cocktail glass",
+            "strInstructions": "In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "In einem Shaker, der halb mit Eiswürfeln gefüllt ist, alle Zutaten vermengen. Gut schütteln. In ein Cocktailglas abseihen.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/rwsyyu1483388181.jpg",
+            "strIngredient1": "Dark rum",
+            "strIngredient2": "Kahlua",
+            "strIngredient3": "Egg white",
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "2 oz ",
+            "strMeasure2": "1 oz ",
+            "strMeasure3": "1 ",
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2017-01-02 20:16:21"
+        },
+        {
+            "idDrink": "17228",
+            "strDrink": "Addison",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Cocktail",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Martini Glass",
+            "strInstructions": "Shake together all the ingredients and strain into a cold glass.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Alle Zutaten vermengen und in ein kaltes Glas abseihen.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/yzva7x1504820300.jpg",
+            "strIngredient1": "Gin",
+            "strIngredient2": "Vermouth",
+            "strIngredient3": null,
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 1/2 shot ",
+            "strMeasure2": "1 1/2 shot ",
+            "strMeasure3": null,
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2017-09-07 22:38:20"
+        },
+        {
+            "idDrink": "17836",
+            "strDrink": "Acapulco",
+            "strDrinkAlternate": null,
+            "strDrinkES": "Acapulco",
+            "strDrinkDE": "Acapulco",
+            "strDrinkFR": "Acapulco",
+            "strDrinkZH-HANS": "阿卡普尔科",
+            "strDrinkZH-HANT": "阿卡普爾科",
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Old-fashioned glass",
+            "strInstructions": "Combine and shake all ingredients (except mint) with ice and strain into an old-fashioned glass over ice cubes. Add the sprig of mint and serve.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Alle Zutaten (außer Minze) mit Eis mischen und schütteln und in ein old-fashioned Glas über Eiswürfel abseihen. Den Minzzweig dazugeben und servieren.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/il9e0r1582478841.jpg",
+            "strIngredient1": "Light rum",
+            "strIngredient2": "Triple sec",
+            "strIngredient3": "Lime juice",
+            "strIngredient4": "Sugar",
+            "strIngredient5": "Egg white",
+            "strIngredient6": "Mint",
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 1/2 oz ",
+            "strMeasure2": "1 1/2 tsp ",
+            "strMeasure3": "1 tblsp ",
+            "strMeasure4": "1 tsp ",
+            "strMeasure5": "1 ",
+            "strMeasure6": "1 ",
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "Yes",
+            "dateModified": "2016-09-02 11:26:16"
+        },
+        {
+            "idDrink": "17840",
+            "strDrink": "Affinity",
+            "strDrinkAlternate": null,
+            "strDrinkES": "Afinidad",
+            "strDrinkDE": "Affinität",
+            "strDrinkFR": "Affinité",
+            "strDrinkZH-HANS": "亲和",
+            "strDrinkZH-HANT": "親和",
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Cocktail glass",
+            "strInstructions": "In a mixing glass half-filled with ice cubes, combine all of the ingredients. Stir well. Strain into a cocktail glass.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "In einem Mischglas, das halb mit Eiswürfeln gefüllt ist, alle Zutaten vermengen. Gut umrühren. In ein Cocktailglas abseihen.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/wzdtnn1582477684.jpg",
+            "strIngredient1": "Scotch",
+            "strIngredient2": "Sweet Vermouth",
+            "strIngredient3": "Dry Vermouth",
+            "strIngredient4": "Orange bitters",
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 1/2 oz ",
+            "strMeasure2": "1 oz ",
+            "strMeasure3": "1 oz ",
+            "strMeasure4": "2 dashes ",
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "Yes",
+            "dateModified": "2017-09-07 21:44:05"
+        },
+        {
+            "idDrink": "11046",
+            "strDrink": "Applecar",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Cocktail glass",
+            "strInstructions": "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Alle Zutaten mit Eis schütteln, in ein Cocktailglas abseihen und servieren.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/sbffau1504389764.jpg",
+            "strIngredient1": "Applejack",
+            "strIngredient2": "Triple sec",
+            "strIngredient3": "Lemon juice",
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 oz ",
+            "strMeasure2": "1 oz ",
+            "strMeasure3": "1 oz ",
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2017-09-02 23:02:44"
+        },
+        {
+            "idDrink": "17180",
+            "strDrink": "Aviation",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": "IBA,Classic",
+            "strVideo": "https://www.youtube.com/watch?v=oOHH0GGglyM",
+            "strCategory": "Cocktail",
+            "strIBA": "Unforgettables",
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Cocktail glass",
+            "strInstructions": "Add all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass. Garnish with a cherry.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Alle Zutaten in den mit Eis gefüllten Cocktailshaker geben. Gut schütteln und in ein Cocktailglas abseihen. Mit einer Kirsche garnieren.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/ruutxt1478253328.jpg",
+            "strIngredient1": "Gin",
+            "strIngredient2": "lemon juice",
+            "strIngredient3": "maraschino liqueur",
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "4.5 cl",
+            "strMeasure2": "1.5 cl",
+            "strMeasure3": "1.5 cl",
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2016-11-04 09:55:28"
+        },
+        {
+            "idDrink": "11014",
+            "strDrink": "Alexander",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": "IBA,Classic,Dairy",
+            "strVideo": "https://www.youtube.com/watch?v=qEhRK_v2w2g",
+            "strCategory": "Ordinary Drink",
+            "strIBA": "Unforgettables",
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Cocktail glass",
+            "strInstructions": "Shake all ingredients with ice and strain contents into a cocktail glass. Sprinkle nutmeg on top and serve.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Alle Zutaten mit Eis schütteln und in ein Cocktailglas abseihen. Muskatnuss darüber streuen und servieren.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/urystu1478253039.jpg",
+            "strIngredient1": "Gin",
+            "strIngredient2": "Creme de Cacao",
+            "strIngredient3": "Light cream",
+            "strIngredient4": "Nutmeg",
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1/2 oz ",
+            "strMeasure2": "1/2 oz white ",
+            "strMeasure3": "2 oz ",
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2016-11-04 09:50:39"
+        },
+        {
+            "idDrink": "11020",
+            "strDrink": "Algonquin",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Cocktail glass",
+            "strInstructions": "Combine and shake all ingredients with ice, strain contents into a cocktail glass, and serve.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Alle Zutaten mit Eis mischen und schütteln, Inhalt in ein Cocktailglas abseihen und servieren.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/uwryxx1483387873.jpg",
+            "strIngredient1": "Blended whiskey",
+            "strIngredient2": "Dry Vermouth",
+            "strIngredient3": "Pineapple juice",
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 1/2 oz ",
+            "strMeasure2": "1 oz ",
+            "strMeasure3": "1 oz ",
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2017-01-02 20:11:13"
+        },
+        {
+            "idDrink": "11021",
+            "strDrink": "Allegheny",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Cocktail glass",
+            "strInstructions": "Shake all ingredients (except lemon peel) with ice and strain into a cocktail glass. Top with the twist of lemon peel and serve.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Alle Zutaten (außer Zitronenschale) mit Eis schütteln und in ein Cocktailglas abseihen. Mit der Drehung der Zitronenschale garnieren und servieren.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/uwvyts1483387934.jpg",
+            "strIngredient1": "Dry Vermouth",
+            "strIngredient2": "Bourbon",
+            "strIngredient3": "Blackberry brandy",
+            "strIngredient4": "Lemon juice",
+            "strIngredient5": "Lemon peel",
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 oz ",
+            "strMeasure2": "1 oz ",
+            "strMeasure3": "1 1/2 tsp ",
+            "strMeasure4": "1 1/2 tsp ",
+            "strMeasure5": "1 twist of ",
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2017-01-02 20:12:14"
+        },
+        {
+            "idDrink": "11055",
+            "strDrink": "Artillery",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Cocktail glass",
+            "strInstructions": "Stir all ingredients with ice, strain into a cocktail glass, and serve.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Alle Zutaten mit Eis verrühren, in ein Cocktailglas abseihen und servieren.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/g1vnbe1493067747.jpg",
+            "strIngredient1": "Sweet Vermouth",
+            "strIngredient2": "Gin",
+            "strIngredient3": "Bitters",
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 1/2 tsp ",
+            "strMeasure2": "1 1/2 oz ",
+            "strMeasure3": "2 dashes ",
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2017-04-24 22:02:27"
+        },
+        {
+            "idDrink": "12560",
+            "strDrink": "Afterglow",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Cocktail",
+            "strIBA": null,
+            "strAlcoholic": "Non alcoholic",
+            "strGlass": "Highball Glass",
+            "strInstructions": "Mix. Serve over ice.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Mischen. Auf Eis servieren.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vuquyv1468876052.jpg",
+            "strIngredient1": "Grenadine",
+            "strIngredient2": "Orange juice",
+            "strIngredient3": "Pineapple juice",
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 part ",
+            "strMeasure2": "4 parts ",
+            "strMeasure3": "4 parts ",
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2016-07-18 22:07:32"
+        },
+        {
+            "idDrink": "12756",
+            "strDrink": "Autodafé",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Highball glass",
+            "strInstructions": "Mix and fill up with soda water. Drunk by finns on a sunny day any time of the year and day.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Mischen und mit Sodawasser auffüllen. Getrunken von Finnen an einem sonnigen Tag zu jeder Jahreszeit und an jedem Tag.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/7dkf0i1487602928.jpg",
+            "strIngredient1": "Vodka",
+            "strIngredient2": "Lime juice",
+            "strIngredient3": "Soda water",
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "4 cl ",
+            "strMeasure2": "1 dash ",
+            "strMeasure3": null,
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2017-02-20 15:02:08"
+        },
+        {
+            "idDrink": "13162",
+            "strDrink": "Afternoon",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Coffee / Tea",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Collins Glass",
+            "strInstructions": "Build into a suiting glass, with no ice. Cream on top if wanted. Served directly.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "In ein passendes Glas geben, ohne Eis. Auf Wunsch mit Sahne überziehen. Direkt serviert.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vyrurp1472667777.jpg",
+            "strIngredient1": "Kahlua",
+            "strIngredient2": "Baileys irish cream",
+            "strIngredient3": "Frangelico",
+            "strIngredient4": "Coffee",
+            "strIngredient5": "Cream",
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "1 cl ",
+            "strMeasure2": "1 cl ",
+            "strMeasure3": "1 1/2 ",
+            "strMeasure4": "4 cl hot ",
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2016-08-31 19:22:57"
+        },
+        {
+            "idDrink": "15182",
+            "strDrink": "After sex",
+            "strDrinkAlternate": null,
+            "strDrinkES": null,
+            "strDrinkDE": null,
+            "strDrinkFR": null,
+            "strDrinkZH-HANS": null,
+            "strDrinkZH-HANT": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Highball glass",
+            "strInstructions": "Pour the vodka and creme over some ice cubes in a tall glass and fill up with juice. to make it beuty full make the top of the glass with a grenadine and sugar",
+            "strInstructionsES": null,
+            "strInstructionsDE": "Gießen Sie den Wodka und die Sahne über einige Eiswürfel in ein hohes Glas und füllen Sie ihn mit Saft. Damit es voll ist, verzieren Sie die Oberseite des Glases mit einer Grenadine und Zucker.",
+            "strInstructionsFR": null,
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/xrl66i1493068702.jpg",
+            "strIngredient1": "Vodka",
+            "strIngredient2": "Creme de Banane",
+            "strIngredient3": "Orange juice",
+            "strIngredient4": null,
+            "strIngredient5": null,
+            "strIngredient6": null,
+            "strIngredient7": null,
+            "strIngredient8": null,
+            "strIngredient9": null,
+            "strIngredient10": null,
+            "strIngredient11": null,
+            "strIngredient12": null,
+            "strIngredient13": null,
+            "strIngredient14": null,
+            "strIngredient15": null,
+            "strMeasure1": "2 cl ",
+            "strMeasure2": "1 cl ",
+            "strMeasure3": null,
+            "strMeasure4": null,
+            "strMeasure5": null,
+            "strMeasure6": null,
+            "strMeasure7": null,
+            "strMeasure8": null,
+            "strMeasure9": null,
+            "strMeasure10": null,
+            "strMeasure11": null,
+            "strMeasure12": null,
+            "strMeasure13": null,
+            "strMeasure14": null,
+            "strMeasure15": null,
+            "strCreativeCommonsConfirmed": "No",
+            "dateModified": "2017-04-24 22:18:22"
+        }
+    ]
+}
+
+// List the categories, glasses, ingredients or alcoholic filters
+// https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list
+{
+    "drinks": [
+        {
+            "strCategory": "Ordinary Drink"
+        },
+        {
+            "strCategory": "Cocktail"
+        },
+        {
+            "strCategory": "Milk / Float / Shake"
+        },
+        {
+            "strCategory": "Other/Unknown"
+        },
+        {
+            "strCategory": "Cocoa"
+        },
+        {
+            "strCategory": "Shot"
+        },
+        {
+            "strCategory": "Coffee / Tea"
+        },
+        {
+            "strCategory": "Homemade Liqueur"
+        },
+        {
+            "strCategory": "Punch / Party Drink"
+        },
+        {
+            "strCategory": "Beer"
+        },
+        {
+            "strCategory": "Soft Drink / Soda"
+        }
+    ]
+}
+
+
+// List the categories, glasses, ingredients or alcoholic filters
+// https://www.thecocktaildb.com/api/json/v1/1/list.php?g=list
+{
+    "drinks": [
+        {
+            "strGlass": "Highball glass"
+        },
+        {
+            "strGlass": "Cocktail glass"
+        },
+        {
+            "strGlass": "Old-fashioned glass"
+        },
+        {
+            "strGlass": "Collins glass"
+        },
+        {
+            "strGlass": "Pousse cafe glass"
+        },
+        {
+            "strGlass": "Champagne flute"
+        },
+        {
+            "strGlass": "Whiskey sour glass"
+        },
+        {
+            "strGlass": "Cordial glass"
+        },
+        {
+            "strGlass": "Brandy snifter"
+        },
+        {
+            "strGlass": "White wine glass"
+        },
+        {
+            "strGlass": "Nick and Nora Glass"
+        },
+        {
+            "strGlass": "Hurricane glass"
+        },
+        {
+            "strGlass": "Coffee mug"
+        },
+        {
+            "strGlass": "Shot glass"
+        },
+        {
+            "strGlass": "Jar"
+        },
+        {
+            "strGlass": "Irish coffee cup"
+        },
+        {
+            "strGlass": "Punch bowl"
+        },
+        {
+            "strGlass": "Pitcher"
+        },
+        {
+            "strGlass": "Pint glass"
+        },
+        {
+            "strGlass": "Copper Mug"
+        },
+        {
+            "strGlass": "Wine Glass"
+        },
+        {
+            "strGlass": "Beer mug"
+        },
+        {
+            "strGlass": "Margarita/Coupette glass"
+        },
+        {
+            "strGlass": "Beer pilsner"
+        },
+        {
+            "strGlass": "Beer Glass"
+        },
+        {
+            "strGlass": "Parfait glass"
+        },
+        {
+            "strGlass": "Mason jar"
+        },
+        {
+            "strGlass": "Margarita glass"
+        },
+        {
+            "strGlass": "Martini Glass"
+        },
+        {
+            "strGlass": "Balloon Glass"
+        },
+        {
+            "strGlass": "Coupe Glass"
+        },
+        {
+            "strGlass": ""
+        }
+    ]
+}
+
+
+// List the categories, glasses, ingredients or alcoholic filters
+// https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list
+{
+    "drinks": [
+        {
+            "strIngredient1": "Light rum"
+        },
+        {
+            "strIngredient1": "Applejack"
+        },
+        {
+            "strIngredient1": "Gin"
+        },
+        {
+            "strIngredient1": "Dark rum"
+        },
+        {
+            "strIngredient1": "Sweet Vermouth"
+        },
+        {
+            "strIngredient1": "Strawberry schnapps"
+        },
+        {
+            "strIngredient1": "Scotch"
+        },
+        {
+            "strIngredient1": "Apricot brandy"
+        },
+        {
+            "strIngredient1": "Triple sec"
+        },
+        {
+            "strIngredient1": "Southern Comfort"
+        },
+        {
+            "strIngredient1": "Orange bitters"
+        },
+        {
+            "strIngredient1": "Brandy"
+        },
+        {
+            "strIngredient1": "Lemon vodka"
+        },
+        {
+            "strIngredient1": "Blended whiskey"
+        },
+        {
+            "strIngredient1": "Dry Vermouth"
+        },
+        {
+            "strIngredient1": "Amaretto"
+        },
+        {
+            "strIngredient1": "Tea"
+        },
+        {
+            "strIngredient1": "Champagne"
+        },
+        {
+            "strIngredient1": "Coffee liqueur"
+        },
+        {
+            "strIngredient1": "Bourbon"
+        },
+        {
+            "strIngredient1": "Tequila"
+        },
+        {
+            "strIngredient1": "Vodka"
+        },
+        {
+            "strIngredient1": "Añejo rum"
+        },
+        {
+            "strIngredient1": "Bitters"
+        },
+        {
+            "strIngredient1": "Sugar"
+        },
+        {
+            "strIngredient1": "Kahlua"
+        },
+        {
+            "strIngredient1": "demerara Sugar"
+        },
+        {
+            "strIngredient1": "Dubonnet Rouge"
+        },
+        {
+            "strIngredient1": "Watermelon"
+        },
+        {
+            "strIngredient1": "Lime juice"
+        },
+        {
+            "strIngredient1": "Irish whiskey"
+        },
+        {
+            "strIngredient1": "Apple brandy"
+        },
+        {
+            "strIngredient1": "Carbonated water"
+        },
+        {
+            "strIngredient1": "Cherry brandy"
+        },
+        {
+            "strIngredient1": "Creme de Cacao"
+        },
+        {
+            "strIngredient1": "Grenadine"
+        },
+        {
+            "strIngredient1": "Port"
+        },
+        {
+            "strIngredient1": "Coffee brandy"
+        },
+        {
+            "strIngredient1": "Red wine"
+        },
+        {
+            "strIngredient1": "Rum"
+        },
+        {
+            "strIngredient1": "Grapefruit juice"
+        },
+        {
+            "strIngredient1": "Ricard"
+        },
+        {
+            "strIngredient1": "Sherry"
+        },
+        {
+            "strIngredient1": "Cognac"
+        },
+        {
+            "strIngredient1": "Sloe gin"
+        },
+        {
+            "strIngredient1": "Apple juice"
+        },
+        {
+            "strIngredient1": "Pineapple juice"
+        },
+        {
+            "strIngredient1": "Lemon juice"
+        },
+        {
+            "strIngredient1": "Sugar syrup"
+        },
+        {
+            "strIngredient1": "Milk"
+        },
+        {
+            "strIngredient1": "Strawberries"
+        },
+        {
+            "strIngredient1": "Chocolate syrup"
+        },
+        {
+            "strIngredient1": "Yoghurt"
+        },
+        {
+            "strIngredient1": "Mango"
+        },
+        {
+            "strIngredient1": "Ginger"
+        },
+        {
+            "strIngredient1": "Lime"
+        },
+        {
+            "strIngredient1": "Cantaloupe"
+        },
+        {
+            "strIngredient1": "Berries"
+        },
+        {
+            "strIngredient1": "Grapes"
+        },
+        {
+            "strIngredient1": "Kiwi"
+        },
+        {
+            "strIngredient1": "Tomato juice"
+        },
+        {
+            "strIngredient1": "Cocoa powder"
+        },
+        {
+            "strIngredient1": "Chocolate"
+        },
+        {
+            "strIngredient1": "Heavy cream"
+        },
+        {
+            "strIngredient1": "Galliano"
+        },
+        {
+            "strIngredient1": "Peach Vodka"
+        },
+        {
+            "strIngredient1": "Ouzo"
+        },
+        {
+            "strIngredient1": "Coffee"
+        },
+        {
+            "strIngredient1": "Spiced rum"
+        },
+        {
+            "strIngredient1": "Water"
+        },
+        {
+            "strIngredient1": "Espresso"
+        },
+        {
+            "strIngredient1": "Angelica root"
+        },
+        {
+            "strIngredient1": "Orange"
+        },
+        {
+            "strIngredient1": "Cranberries"
+        },
+        {
+            "strIngredient1": "Johnnie Walker"
+        },
+        {
+            "strIngredient1": "Apple cider"
+        },
+        {
+            "strIngredient1": "Everclear"
+        },
+        {
+            "strIngredient1": "Cranberry juice"
+        },
+        {
+            "strIngredient1": "Egg yolk"
+        },
+        {
+            "strIngredient1": "Egg"
+        },
+        {
+            "strIngredient1": "Grape juice"
+        },
+        {
+            "strIngredient1": "Peach nectar"
+        },
+        {
+            "strIngredient1": "Lemon"
+        },
+        {
+            "strIngredient1": "Firewater"
+        },
+        {
+            "strIngredient1": "Lemonade"
+        },
+        {
+            "strIngredient1": "Lager"
+        },
+        {
+            "strIngredient1": "Whiskey"
+        },
+        {
+            "strIngredient1": "Absolut Citron"
+        },
+        {
+            "strIngredient1": "Pisco"
+        },
+        {
+            "strIngredient1": "Irish cream"
+        },
+        {
+            "strIngredient1": "Ale"
+        },
+        {
+            "strIngredient1": "Chocolate liqueur"
+        },
+        {
+            "strIngredient1": "Midori melon liqueur"
+        },
+        {
+            "strIngredient1": "Sambuca"
+        },
+        {
+            "strIngredient1": "Cider"
+        },
+        {
+            "strIngredient1": "Sprite"
+        },
+        {
+            "strIngredient1": "7-Up"
+        },
+        {
+            "strIngredient1": "Blackberry brandy"
+        },
+        {
+            "strIngredient1": "Peppermint schnapps"
+        },
+        {
+            "strIngredient1": "Creme de Cassis"
+        }
+    ]
+}
+
+
+// List the categories, glasses, ingredients or alcoholic filters
+// https://www.thecocktaildb.com/api/json/v1/1/list.php?a=list
+{
+    "drinks": [
+        {
+            "strAlcoholic": "Alcoholic"
+        },
+        {
+            "strAlcoholic": "Non alcoholic"
+        },
+        {
+            "strAlcoholic": "Optional alcohol"
+        }
+    ]
+}
