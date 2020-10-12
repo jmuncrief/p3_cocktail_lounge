@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+body { 
+  background-color: black;
+} 
+
+#title { 
+  font-size: 35px; 
+  background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

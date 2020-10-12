@@ -1,44 +1,27 @@
-<<<<<<< HEAD
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-=======
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
-import NoMatch from "./pages/NoMatch";
+import NoMatch from "./pages/NoMatch"; 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import Header from "./components/Header/Header"; 
+import Footer from "./components/Footer/Footer";  
+import "./App.css"
+
+
 
 function App() {
   return (
-    <Router>
-      <div>
+    <Router> 
+      <div> 
+        <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/home" component={Home} /> 
           <Route component={NoMatch} />
-        </Switch>
+        </Switch> 
+        <Footer />
       </div>
     </Router>
->>>>>>> e6b586412f624c9336fd7b68d4f385d6dcbf59f2
   );
 }
 
