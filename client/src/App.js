@@ -9,6 +9,7 @@ import "./App.css"
 
 
 
+
 function App() {
   return (
     <Router> 
@@ -18,7 +19,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} /> 
           <Route component={NoMatch} />
-        </Switch> 
+        </Switch>  
         <Footer />
       </div>
     </Router>
