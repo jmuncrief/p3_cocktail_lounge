@@ -1,7 +1,8 @@
 // Modules
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; 
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+// import 'bootstrap/dist/css/bootstrap.min.css'; 
+//caused the site to not compile in the browser. Unsure as to why as of yet.
 import Header from "./components/Header/Header"; 
 import Footer from "./components/Footer/Footer";  
 import "./App.css"
