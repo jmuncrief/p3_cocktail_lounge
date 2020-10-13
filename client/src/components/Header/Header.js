@@ -8,10 +8,26 @@ import API from "../../utils/axiosCalls"
 function Header() {
 
     const inputRef = useRef();
+    const typeRef = useRef();
 
-    async function search(val) {
-        const {data} = await API.filterIngredient(val)
-        console.log(data.drinks)
+    async function search(query, type) {
+        switch (type) {
+            case "Ingredient": {
+                const {data} = await API.filterIngredient(query)
+                console.log(data.drinks)
+            } break;
+            case "Drink Name": {
+                const {data} = await API.searchCocktailName(query)
+                console.log(data.drinks)
+            } break;
+            case "Random": {
+                const {data} = await API.random()
+                console.log(data.drinks)
+            } break;
+        
+            default:
+                break;
+        }
 
     }
 
