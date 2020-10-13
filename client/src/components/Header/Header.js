@@ -8,6 +8,7 @@ import API from "../../utils/axiosCalls"
 function Header() {
 
     const inputRef = useRef();
+    // typeRef to be used as "ref" attribute of search-selection dropdown
     const typeRef = useRef();
 
     async function search(query, type) {
