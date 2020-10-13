@@ -1,0 +1,41 @@
+#title {
+  font-size: 35px;
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+
+.navbar {  
+    background-color: rgb(41, 38, 38);
+
+} 
+
+.navbar a {
+    color: black;
+}
+.hpLink { 
+    color: red !important;
+    font-size: 20px; 
+    
+}  
+
+.liquors { 
+    
+    background-color: rgb(41, 38, 38);
+    color: red !important;
+}
+
+#nav-dropdown { 
+    color: red !important; 
+    font-size: 20px;  
+    
+}

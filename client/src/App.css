@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+body { 
+  background-color: black;
+}  
+
+/* img { 
+  transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+} */ 
+img { 
+  object-fit: contain; 
+  width: 600px; 
+  height: 600px; 
+  margin-top: -20px;
+}
+
+.caption { 
+  margin-bottom: -50px;
+} 
+
+h3 { 
+  color: red; 
+  font-weight: bold;
+}
