@@ -6,7 +6,7 @@ const NoMatch = () => {
   return (
     <Container fluid>
       <Row>
-        <Col className="md-12">
+        <Col className="md-12 text-center">
           <Jumbotron>
             <h1>404 Page Not Found</h1>
             <h1>
