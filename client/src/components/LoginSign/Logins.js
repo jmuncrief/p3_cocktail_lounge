@@ -7,6 +7,7 @@ function Logins() {
   return (
     <Container>
       <Jumbotron className="jumbo-border-double">
+      <Image src="/client/public/assets/images/gold-on-black-bottle.jpg/800x800" fluid />
         <h1>Login / Sign-up</h1>
         <hr/>
       <Row>
