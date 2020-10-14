@@ -47,7 +47,7 @@ function Header() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="#home" className="hpLink">Favorites</Nav.Link>
+                    <Nav.Link href="/home" className="hpLink">Favorites</Nav.Link>
                     <NavDropdown title="Sort by liquor" id="nav-dropdown">
                         <NavDropdown.Item className="liquors" href="#action/3.1">Vodka</NavDropdown.Item>
                         <NavDropdown.Item className="liquors" href="#action/3.2">Rum</NavDropdown.Item>
@@ -68,7 +68,7 @@ function Header() {
                         <Button onClick={() => search(headerState.query)} variant="outline-success">Search</Button>
                         <Button onClick={() => randSearch()} variant="outline-success">Random</Button>
                     </Form >
-                    <Nav.Link href="/logins" className="hpLink" style={{ justifyContent: "end" }}>Sign-In</Nav.Link>
+                    <Nav.Link href="/login" className="hpLink" style={{ justifyContent: "end" }}>Sign-In</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar >
