@@ -39,6 +39,8 @@
 
 body { 
   background-color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border: 10px ridge rgb(255, 255, 255);
 }  
 
 /* img { 
@@ -48,8 +50,8 @@ body {
 } */ 
 img { 
   object-fit: contain; 
-  width: 600px; 
-  height: 600px; 
+  width: 500px; 
+  height: 500px; 
   margin-top: -20px;
 }
 

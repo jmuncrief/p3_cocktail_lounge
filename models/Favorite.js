@@ -14,7 +14,6 @@ const FavoriteSchema = new Schema({
   instructions: { type: String, required: true },
   ingredients: { type: Array, required: true },
   ratings: { type: Array, required: false },
-  shared: { type: Boolean, required: true },
 });
 
 const Favorite = mongoose.model("Favorite", FavoriteSchema);
