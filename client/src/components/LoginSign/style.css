@@ -1,3 +1,25 @@
-.padding-top {
-    margin-top: 65px;
+html {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+​ body {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  border: 10px ridge rgb(255, 255, 255);
+}
+/* ​ .logo {
+  background-image: url("../assets/images/goldOnBlackBottle.jpg");
+} */
+​ hr {
+  width: 25%;
+  color: rgb(133, 128, 128);
+  border: 2px rgb(255, 0, 0);
+}
+​ .jumbo-border-double {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border: 6px double rgb(255, 0, 0);
+  margin: 10vh 5vh 10vh 5vh;
+}
+​ .margin {
+  margin-bottom: 20px;
 }

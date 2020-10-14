@@ -7,7 +7,7 @@ import "./Header.css";
 function Header() {
     return (
         <Navbar bg="" expand="lg" class="navbar">
-            <Navbar.Brand href="#home" id="title">Cocktail Lounge</Navbar.Brand>
+            <Navbar.Brand href="/home" id="title">Cocktail Lounge</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
@@ -25,7 +25,7 @@ function Header() {
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                         <Button variant="outline-success">Search</Button>
                     </Form >
-                    <Nav.Link href="#login" className="hpLink" style={{ justifyContent: "end" }}>Sign-In</Nav.Link>
+                    <Nav.Link href="/logins" className="hpLink" style={{ justifyContent: "end" }}>Sign-In</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar >

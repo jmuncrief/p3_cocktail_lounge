@@ -1,0 +1,13 @@
+.search { 
+    width: 200px; 
+    margin-left: 10px; 
+    justify-content: flex-end;
+} 
+
+.checkboxes { 
+    text-align: justify; 
+    color: red; 
+    justify-content: end;
+} 
+
+
