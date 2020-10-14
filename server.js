@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
+const session = require("express-session");
 const app = express();
 const passport = require("./config/passport");
 const isAuthenticated = require("./config/middleware/isAuthenticated");

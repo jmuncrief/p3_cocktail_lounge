@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 
 export default function Slides() {
@@ -21,7 +21,7 @@ export default function Slides() {
           src="../assets/images/gin.png"
           alt="gin"
         />
-
+        
         <Carousel.Caption className="caption">
           <h3>Gin</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
