@@ -31,11 +31,6 @@ function Header() {
                 const { data } = await API.searchCocktailName(query)
                 console.log(data.drinks)
             } break;
-            case "Random": {
-                const data = await API.random()
-                console.log(data)
-            } break;
-
             default:
                 break;
         }
