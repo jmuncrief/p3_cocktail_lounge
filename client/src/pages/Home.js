@@ -8,7 +8,7 @@ const Home = () => {
   return (  
     <Container fluid>
     <Row>
-      <Col className="md-12 text-center">
+      <Col>
         <Slides/>
       </Col>
     </Row> 
