@@ -21,7 +21,7 @@ function Header() {
         // typeRef.title = e
     }
 
-    async function search(query, type) {
+    async function search(query) {
         switch (searchType) {
             case "Ingredient": {
                 const { data } = await API.filterIngredient(query)
@@ -32,14 +32,19 @@ function Header() {
                 console.log(data.drinks)
             } break;
             case "Random": {
-                const { data } = await API.random()
-                console.log(data.drinks)
+                const data = await API.random()
+                console.log(data)
             } break;
 
             default:
                 break;
         }
 
+    }
+
+    async function randSearch() {
+        const { data } = await API.random()
+        console.log(data.drinks[0])
     }
 
 
@@ -69,6 +74,7 @@ function Header() {
                         </DropdownButton>
 
                         <Button onClick={() => search(inputRef.current.value)} variant="outline-success">Search</Button>
+                        <Button onClick={() => randSearch()} variant="outline-success">Random</Button>
                     </Form >
                     <Nav.Link href="#login" className="hpLink" style={{ justifyContent: "end" }}>Sign-In</Nav.Link>
                 </Nav>
