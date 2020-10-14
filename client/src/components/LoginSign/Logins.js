@@ -1,33 +1,40 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import { Jumbotron, Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./style.css";
 import API from "../../utils/API";
+import { useHistory } from "react-router-dom";
+import { LOGIN } from "../../utils/actions";
+import { useStoreContext } from "../../utils/GlobalState";
+
 
 function Logins() {
-  const fnameRef = useRef();
-  const lnameRef = useRef();
-  const emailRef = useRef();
-  const pwdRef = useRef();
-  const loginEmailRef = useRef();
-  const loginPwdRef = useRef();
+  const history = useHistory();
+  const [state, dispatch] = useStoreContext();
+
+  const [fname, setFname] = useState("");
+  const [lname, setLname] = useState("");
+  const [email, setEmail] = useState("");
+  const [pwd, setPwd] = useState("");
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPwd, setLoginPwd] = useState("");
 
   function signup() {
     console.log(
-      `${fnameRef.current.value} ${lnameRef.current.value} ${emailRef.current.value} ${pwdRef.current.value}`
+      `${fname} ${lname} ${email} ${pwd}`
     );
     API.newUser({
-      email: emailRef.current.value,
-      password: pwdRef.current.value,
-      f_name: fnameRef.current.value,
-      l_name: lnameRef.current.value,
+      email: email,
+      password: pwd,
+      f_name: fname,
+      l_name: lname,
     }).then((result) => {
       console.log(result);
     });
   }
 
   function login() {
-    const email = loginEmailRef.current.value;
-    const password = loginPwdRef.current.value;
+    const email = loginEmail;
+    const password = loginPwd;
 
     fetch("/api/users/login", {
       method: "POST",
@@ -39,7 +46,14 @@ function Logins() {
       }),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data))
+      .then((data) => {
+        console.log(data);
+        dispatch({
+          type: LOGIN,
+          payload: data.message,
+        });
+        history.push("/members");
+      })
       // receive the data here and redirect based on a value that we send back?
       .catch((err) => console.log(err));
   }
@@ -56,11 +70,11 @@ function Logins() {
               <Form className="text-right">
                 <Form.Group controlId="formGroupEmail">
                   <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" ref={loginEmailRef}/>
+                  <Form.Control type="email" placeholder="Enter email" onChange={(e) => setLoginEmail(e.target.value)}/>
                 </Form.Group>
                 <Form.Group controlId="formGroupPassword">
                   <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" placeholder="Password" ref={loginPwdRef}/>
+                  <Form.Control type="password" placeholder="Password" onChange={(e) => setLoginPwd(e.target.value)}/>
                 </Form.Group>
                 <Button
                   className="button-border white-text"
@@ -83,7 +97,7 @@ function Logins() {
                   <Form.Control
                     type="firstname"
                     placeholder="Enter your first name"
-                    ref={fnameRef}
+                    onChange={(e) => setFname(e.target.value)}
                   />
                 </Form.Group>
                 <Form.Group controlId="formGroupLast">
@@ -91,7 +105,7 @@ function Logins() {
                   <Form.Control
                     type="lastname"
                     placeholder="Enter your last name"
-                    ref={lnameRef}
+                    onChange={(e) => setLname(e.target.value)}
                   />
                 </Form.Group>
                 <Form.Group controlId="formGroupEmail">
@@ -99,7 +113,7 @@ function Logins() {
                   <Form.Control
                     type="email"
                     placeholder="Enter email"
-                    ref={emailRef}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </Form.Group>
                 <Form.Group controlId="formGroupPassword">
@@ -107,7 +121,7 @@ function Logins() {
                   <Form.Control
                     type="password"
                     placeholder="Password"
-                    ref={pwdRef}
+                    onChange={(e) => setPwd(e.target.value)}
                   />
                 </Form.Group>
                 <Button
