@@ -12,7 +12,7 @@ const UserSchema = new Schema({
   _customs: [{ type: Schema.Types.ObjectId, ref: "Custom" }],
 });
 
-UserSchema.pre(save, function (next) {
+UserSchema.pre("save", function (next) {
   const user = this;
 
   if (!user.isModified("password")) return next();
