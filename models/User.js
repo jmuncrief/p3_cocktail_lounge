@@ -12,7 +12,7 @@ const UserSchema = new Schema({
   _customs: [{ type: Schema.Types.ObjectId, ref: "Custom" }],
 });
 
-UserSchema.pre(save, function (next) {
+UserSchema.pre("save", function (next) {
   const user = this;
 
   if (!user.isModified("password")) return next();
@@ -29,11 +29,8 @@ UserSchema.pre(save, function (next) {
   });
 });
 
-UserSchema.methods.comparePassword = function (userPassword, cb) {
-  bcrypt.compare(userPassword, this.password, function (err, isMatch) {
-    if (err) return cb(err);
-    cb(null, isMatch);
-  });
+UserSchema.methods.validPassword = function (password) {
+  return bcrypt.compareSync(password, this.password);
 };
 
 const User = mongoose.model("User", UserSchema);

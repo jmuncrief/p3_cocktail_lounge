@@ -15,6 +15,12 @@ body {
   height:'250px'
 }
 
+.logo {
+  background-image: url("../../images/bottle.jpg");
+  width:'250px';
+  height:'250px'
+}
+
 hr {
   width: 25%;
   color: rgb(133, 128, 128);
