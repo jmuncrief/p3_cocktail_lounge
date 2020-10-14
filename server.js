@@ -4,7 +4,7 @@ const routes = require("./routes");
 const session = require("express-session");
 const app = express();
 const passport = require("./config/passport");
-const isAuthenticated = require("./config/middleware/isAuthenticated");
+
 require("dotenv").config();
 const logger = require("morgan");
 
