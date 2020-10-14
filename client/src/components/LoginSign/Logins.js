@@ -5,10 +5,10 @@ import "./style.css";
 function Logins() {
   return (
     <Container>
+      <h1 className="white-text">Welcome!</h1>
       <Jumbotron className="jumbo-border-double logo">
         {/* <Image src={process.env.PUBLIC_URL + "/assets/images/bottle.jpg"}  fluid /> */}
         <h1 className="white-text">Login / Sign-up</h1>
-        <hr />
         <Row>
           <Col className="text-center">
             <Jumbotron className="jumbo-border-double">
