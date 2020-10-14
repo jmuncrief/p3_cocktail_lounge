@@ -1,27 +1,48 @@
 import React, { useRef } from "react";
 import { Jumbotron, Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./style.css";
-import API from "../../utils/API"
+import API from "../../utils/API";
 
 function Logins() {
   const fnameRef = useRef();
   const lnameRef = useRef();
   const emailRef = useRef();
   const pwdRef = useRef();
+  const loginEmailRef = useRef();
+  const loginPwdRef = useRef();
 
   function signup() {
-    console.log(`${fnameRef.current.value} ${lnameRef.current.value} ${emailRef.current.value} ${pwdRef.current.value}`)
+    console.log(
+      `${fnameRef.current.value} ${lnameRef.current.value} ${emailRef.current.value} ${pwdRef.current.value}`
+    );
     API.newUser({
       email: emailRef.current.value,
       password: pwdRef.current.value,
       f_name: fnameRef.current.value,
       l_name: lnameRef.current.value,
-    })
-    .then(result => {
-      console.log(result)
-    })
+    }).then((result) => {
+      console.log(result);
+    });
   }
 
+  function login() {
+    const email = loginEmailRef.current.value;
+    const password = loginPwdRef.current.value;
+
+    console.log(email + " " + password)
+    fetch("/api/users/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email, password
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err));
+  }
   return (
     <Container>
       <Jumbotron className="jumbo-border-double logo">
@@ -33,19 +54,20 @@ function Logins() {
             <Jumbotron className="jumbo-border-double">
               <h2 className="">Login</h2>
               <Form className="text-right">
-              <Form.Group controlId="formGroupEmail">
+                <Form.Group controlId="formGroupEmail">
                   <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
+                  <Form.Control type="email" placeholder="Enter email" ref={loginEmailRef}/>
                 </Form.Group>
                 <Form.Group controlId="formGroupPassword">
                   <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" placeholder="Password" />
+                  <Form.Control type="password" placeholder="Password" ref={loginPwdRef}/>
                 </Form.Group>
                 <Button
                   className="button-border white-text"
                   variant="dark"
                   size="lg"
                   block
+                  onClick={() => login()}
                 >
                   Login
                 </Button>
@@ -74,11 +96,19 @@ function Logins() {
                 </Form.Group>
                 <Form.Group controlId="formGroupEmail">
                   <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" ref={emailRef} />
+                  <Form.Control
+                    type="email"
+                    placeholder="Enter email"
+                    ref={emailRef}
+                  />
                 </Form.Group>
                 <Form.Group controlId="formGroupPassword">
                   <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" placeholder="Password" ref={pwdRef}/>
+                  <Form.Control
+                    type="password"
+                    placeholder="Password"
+                    ref={pwdRef}
+                  />
                 </Form.Group>
                 <Button
                   className="button-border text-white"

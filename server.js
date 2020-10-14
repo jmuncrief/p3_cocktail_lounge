@@ -6,12 +6,14 @@ const app = express();
 const passport = require("./config/passport");
 const isAuthenticated = require("./config/middleware/isAuthenticated");
 require("dotenv").config();
+const logger = require("morgan");
 
 const PORT = process.env.PORT || 3001;
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(logger("dev"));
 // We need to use sessions to keep track of our user's login status
 app.use(
   session({ secret: process.env.SECRET, resave: true, saveUninitialized: true })
