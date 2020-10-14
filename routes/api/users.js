@@ -9,6 +9,9 @@ router
     .post(passport.authenticate("local"), function (req, res) {
         res.json({
           message: "authenticated!",
+          email: req.user.email,
+          name: `${req.user.f_name} ${req.user.l_name}`,
+          id: req.user._id
           // could we send back some kind of value that would update state and allow access to a page? 
         });
       });

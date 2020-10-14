@@ -29,7 +29,6 @@ function Logins() {
     const email = loginEmailRef.current.value;
     const password = loginPwdRef.current.value;
 
-    console.log(email + " " + password)
     fetch("/api/users/login", {
       method: "POST",
       headers: {
@@ -41,6 +40,7 @@ function Logins() {
     })
       .then((res) => res.json())
       .then((data) => console.log(data))
+      // receive the data here and redirect based on a value that we send back?
       .catch((err) => console.log(err));
   }
   return (
