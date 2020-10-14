@@ -1,16 +1,21 @@
 import React from "react";
-import { Col, Row, Container, } from "react-bootstrap";
-import Slides from "../components/Slides/Slides"
+import Slides from "../components/Slides/Slides";  
+import { Row, Container, Col } from "react-bootstrap"; 
+import Search from "../components/Search/Search"
+
 
 const Home = () => {
-  return (
-    <Container>
-      <Row className="text-center">
-        <Col>
-          <Slides />
-        </Col>
-      </Row>
-    </Container>
+  return (  
+    <Container fluid>
+    <Row>
+      <Col>
+        <Slides/>
+      </Col>
+    </Row> 
+    <Row> 
+      <Search/>
+    </Row>
+  </Container>
   );
 };
 

@@ -1,0 +1,15 @@
+img { 
+    object-fit: contain; 
+    width: 450px; 
+    height: 450px; 
+    margin-top: -25px;
+  }
+  
+  .caption { 
+    margin-bottom: -50px;
+  } 
+  
+  h3 { 
+    color: red; 
+    font-weight: bold;
+  }

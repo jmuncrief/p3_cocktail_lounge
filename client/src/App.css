@@ -50,8 +50,8 @@ body {
 } */ 
 img { 
   object-fit: contain; 
-  width: 600px; 
-  height: 600px; 
+  width: 500px; 
+  height: 500px; 
   margin-top: -20px;
 }
 
