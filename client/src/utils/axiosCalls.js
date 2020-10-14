@@ -29,7 +29,7 @@ export default {
     filterIngredient: function(query) {
         return axios.get(queryURL + searchType.filterIngredient + query)
     },
-    random: function(query) {
-        return axios.get(queryURL + searchType.random + query)
+    random: function() {
+        return axios.get(queryURL + searchType.random)
     },
 }
