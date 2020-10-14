@@ -5,7 +5,7 @@ import "./Search.css"
 function Search() {
     return (
         <div>
-            <Form inline>
+            <Form inline className="searchComp">
 
                 <div key="default-checkbox" className="mb-3 checkboxes">
                     <Form.Check
@@ -18,9 +18,11 @@ function Search() {
                         id="default-checkbox"
                         label="Search by Ingredient"
                     />
-                </div> 
-                <FormControl type="text" placeholder="Search" className="mr-sm-2 search" />
+                </div>  
+                <div> 
+                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                 <Button variant="outline-success">Search</Button>
+                </div>
 
             </Form>
         </div> 

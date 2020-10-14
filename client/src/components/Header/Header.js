@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Button, Form, FormControl, Navbar, NavDropdown, Nav } from 'react-bootstrap'; 
 import "./Header.css";
 
 
-
 function Header() {
+    const inputRef = useRef();
+
+    function search(val) {
+        
+    }
+
     return (
         <Navbar bg="" expand="lg" class="navbar">
             <Navbar.Brand href="/home" id="title">Cocktail Lounge</Navbar.Brand>
@@ -22,17 +27,13 @@ function Header() {
                 </Nav>
                 <Nav className="">
                     <Form inline>
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="outline-success">Search</Button>
+                        <FormControl type="text" placeholder="Search" className="mr-sm-2" ref={inputRef} />
+                        <Button variant="outline-success" onClick={() => search(inputRef)}>Search</Button>
                     </Form >
                     <Nav.Link href="/logins" className="hpLink" style={{ justifyContent: "end" }}>Sign-In</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar >
-
-
-
-
     )
 }
 

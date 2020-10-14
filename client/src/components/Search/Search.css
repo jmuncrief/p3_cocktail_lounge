@@ -1,13 +1,22 @@
 .search { 
     width: 200px; 
     margin-left: 10px; 
-    justify-content: flex-end;
+    justify-content: center;
 } 
 
 .checkboxes { 
     text-align: justify; 
     color: red; 
     justify-content: end;
-} 
+}  
+
+.searchComp {  
+    
+    
+    
+ 
+    
+}
+
 
 
