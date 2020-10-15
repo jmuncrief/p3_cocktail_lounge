@@ -1,9 +1,11 @@
 import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
 import Jumbotron from "react-bootstrap/Jumbotron";
+import RecipeForm from "../components/RecipeForm/RecipeForm";
 
 const NoMatch = () => {
   return (
+    <>
     <Container fluid>
       <Row>
         <Col className="md-12 text-center">
@@ -18,6 +20,8 @@ const NoMatch = () => {
         </Col>
       </Row>
     </Container>
+    <RecipeForm />
+    </>
   );
 };
 

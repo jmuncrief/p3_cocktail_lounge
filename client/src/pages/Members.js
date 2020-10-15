@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import RecipeForm from "../components/RecipeForm/RecipeForm";
 
 export default function Members() {
     const [name, setName] = useState("");
@@ -23,6 +24,7 @@ export default function Members() {
             <h1>logged in as {name}</h1>
             <h3>favorites: {faves}</h3>
             <h3>customs: {customs}</h3>
+            <RecipeForm />
         </div>
     )
 }
