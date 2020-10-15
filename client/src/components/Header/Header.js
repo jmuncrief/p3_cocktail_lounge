@@ -21,7 +21,7 @@ function Header() {
                     </NavDropdown>
                 </Nav>
                 <Nav className="">
-                    <Nav.Link href="/login" className="hpLink" style={{ justifyContent: "end" }}>Sign-In</Nav.Link>
+                    <Nav.Link href="/logins" className="hpLink" style={{ justifyContent: "end" }}>Sign-In</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar >
