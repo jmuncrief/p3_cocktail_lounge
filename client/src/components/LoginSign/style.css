@@ -2,23 +2,10 @@ html {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-body {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: rgb(0, 0, 0);
-  text-align: center;
-  border: 10px ridge rgb(255, 255, 255);
-}
-
 .logo {
   background-image: url("../../images/bottle.jpg");
-  width:'250px';
-  height:'250px'
-}
-
-.logo {
-  background-image: url("../../images/bottle.jpg");
-  width:'250px';
-  height:'250px'
+  width: "250px";
+  height: "250px";
 }
 
 hr {
@@ -35,8 +22,8 @@ hr {
 }
 
 .button-border {
-    color: rgb(0, 0, 0);
-    border: 6px double rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
+  border: 6px double rgb(255, 0, 0);
 }
 
 .margin {
@@ -49,8 +36,7 @@ hr {
 }
 
 .box-shadow-grey {
-    background-color: #000000;
-    box-shadow: #ffffff 8px 8px 8px 8px;
-    max-width: 100%;
-
-  }
+  background-color: #000000;
+  box-shadow: #ffffff 8px 8px 8px 8px;
+  max-width: 100%;
+}

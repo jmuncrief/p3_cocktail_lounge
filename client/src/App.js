@@ -14,7 +14,8 @@ import Home from "./pages/Home";
 import NoMatch from "./pages/NoMatch";
 import Login from "./pages/Login";
 import Members from "./pages/Members";
-import PrivateRoute from "./utils/PrivateRoute";
+import PrivateRoute from "./utils/PrivateRoute"; 
+import Practice from "./pages/Practice"
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
-          <Route exact path="/login" component={Login} />
+          <Route exact path="/logins" component={Login} /> 
+          <Route exact path="/practice" component={Practice} />
           <PrivateRoute exact path="/members" component={Members} />
           <Route component={NoMatch} />
         </Switch> 
