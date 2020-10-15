@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header"; 
 import Footer from "./components/Footer/Footer";  
 import Logins from "./components/LoginSign/Logins";
+import RecipeJumbo from "./components/RecipeJumbo/RecipeJumbo";
 import MembersSearch from "./components/MemberSearch/MemberSearch";
 import "./App.css"
 
@@ -14,8 +15,7 @@ import Home from "./pages/Home";
 import NoMatch from "./pages/NoMatch";
 import Login from "./pages/Login";
 import Members from "./pages/Members";
-import PrivateRoute from "./utils/PrivateRoute"; 
-import Practice from "./pages/Practice"
+import PrivateRoute from "./utils/PrivateRoute";
 
 function App() {
   return (
@@ -25,9 +25,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
-          <Route exact path="/logins" component={Login} /> 
-          <Route exact path="/practice" component={Practice} />
-          <PrivateRoute exact path="/members" component={Members} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/recipejumbo" component={RecipeJumbo} />
           <Route component={NoMatch} />
         </Switch> 
         <Footer />
