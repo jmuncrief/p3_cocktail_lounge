@@ -8,8 +8,8 @@ function Search() {
     const [searchState, setSearchState] = useState({
         searchType: "Drink Name",
         dropdownTitle: "Search for:",
-        query: ""
-
+        query: "",
+        searchResults: []
     })
 
     // Runs when dropdown value is changed; changes searchType
@@ -17,15 +17,28 @@ function Search() {
         setSearchState({ ...searchState, searchType: e, dropdownTitle: e })
     }
 
+    function handleResults(results) {
+        console.log("Results: ", results)
+        setSearchState({ ...searchState, searchResults: results })
+        console.log("function ran!")
+        console.log("State: ", searchState)
+    }
+
     async function search(query) {
         switch (searchState.searchType) {
             case "Ingredient": {
                 const { data } = await API.filterIngredient(query)
-                console.log(data.drinks)
+                console.log("data.drinks: ", data.drinks)
+                // handleResults(data.drinks)
+                setSearchState({...searchState, searchResults: data.drinks})
+                console.log("searchState.searchResults: ", searchState.searchResults)
             } break;
             case "Drink Name": {
                 const { data } = await API.searchCocktailName(query)
-                console.log(data.drinks)
+                console.log("data.drinks: ", data.drinks)
+                // handleResults(data.drinks)
+                setSearchState({...searchState, searchResults: data.drinks})
+                console.log("searchState.searchResults: ", searchState.searchResults)
             } break;
             default:
                 break;
@@ -37,7 +50,6 @@ function Search() {
         const { data } = await API.random()
         console.log(data.drinks[0])
     }
-
 
     return (
         <div>
