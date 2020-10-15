@@ -1,0 +1,27 @@
+.cocktail {    
+    background-color: rgb(133, 128, 128);;  
+    width: 30%; 
+    height: 400px; 
+    margin-top: 30px; 
+    margin-bottom: 60px; 
+   
+} 
+
+.title { 
+    font-size: 30px; 
+    text-align: center; 
+    font-weight: bold; 
+    
+}  
+
+.responsive { 
+    object-fit: contain; 
+    max-width: 100%; 
+    height: auto; 
+    text-align: center; 
+    position: relative;  
+    padding-top: 20px; 
+    padding-bottom: 20px;
+ 
+}
+
