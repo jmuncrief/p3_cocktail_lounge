@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react' 
+import Card from "../components/Card/Card"
 
 export default function Members() {
     return (
         <div>
-            <h1>logged in</h1>
+           
         </div>
     )
 }

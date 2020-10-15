@@ -1,16 +1,11 @@
 import React, { useRef } from "react";
-<<<<<<< HEAD
 import { Button, Form, FormControl, Navbar, NavDropdown, Nav, Dropdown, DropdownButton } from 'react-bootstrap';
-=======
-import { Button, Form, FormControl, Navbar, NavDropdown, Nav } from 'react-bootstrap'; 
->>>>>>> d230aaf263d289cd46d9b98c3f7ca397a99600b4
 import "./Header.css";
 import API from "../../utils/axiosCalls"
 
 
 
 function Header() {
-<<<<<<< HEAD
 
     // Refs to search field and dropdown
     const inputRef = useRef();
@@ -47,14 +42,6 @@ function Header() {
     }
 
 
-=======
-    const inputRef = useRef();
-
-    function search(val) {
-        
-    }
-
->>>>>>> d230aaf263d289cd46d9b98c3f7ca397a99600b4
     return (
         <Navbar bg="" expand="lg" class="navbar">
             <Navbar.Brand href="/home" id="title">Cocktail Lounge</Navbar.Brand>
@@ -73,7 +60,6 @@ function Header() {
                 <Nav className="">
                     <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" ref={inputRef} />
-<<<<<<< HEAD
 
                         <DropdownButton alignRight title="Search for:" id="search-dropdown"
                             ref={typeRef} onSelect={searchSelect}>
@@ -83,9 +69,6 @@ function Header() {
 
                         <Button onClick={() => search(inputRef.current.value)} variant="outline-success">Search</Button>
                         <Button onClick={() => randSearch()} variant="outline-success">Random</Button>
-=======
-                        <Button variant="outline-success" onClick={() => search(inputRef)}>Search</Button>
->>>>>>> d230aaf263d289cd46d9b98c3f7ca397a99600b4
                     </Form >
                     <Nav.Link href="/logins" className="hpLink" style={{ justifyContent: "end" }}>Sign-In</Nav.Link>
                 </Nav>

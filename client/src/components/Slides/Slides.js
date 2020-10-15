@@ -12,7 +12,7 @@ const Slides = () => {
           <Carousel>
             <Carousel.Item>
               <img
-                className="d-block w-100"
+                className="d-block w-100 slides-image"
                 src="../assets/images/vodka.png"
                 alt="vodka"
               />
@@ -22,7 +22,7 @@ const Slides = () => {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100"
+                className="d-block w-100 slides-image"
                 src="../assets/images/gin.png"
                 alt="gin"
               />
@@ -33,7 +33,7 @@ const Slides = () => {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 responsive"
+                className="d-block w-100 slides-image"
                 src="../assets/images/rum.png"
                 alt="rum"
               />
@@ -44,7 +44,7 @@ const Slides = () => {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 responsive"
+                className="d-block w-100 slides-image"
                 src="../assets/images/tequila.png"
                 alt="tequila"
               />
@@ -55,7 +55,7 @@ const Slides = () => {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 responsive"
+                className="d-block w-100 slides-image"
                 src="../assets/images/scotch.png"
                 alt="scotch"
               />
