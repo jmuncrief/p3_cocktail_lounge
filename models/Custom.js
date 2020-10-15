@@ -3,7 +3,6 @@ const Schema = mongoose.Schema;
 
 const CustomSchema = new Schema({
   name: { type: String, required: true },
-  category: { type: String, required: true },
   alcoholic: { type: Boolean, required: true },
   instructions: { type: String, required: true },
   ingredients: { type: Array, required: true },

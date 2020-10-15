@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Form, Button, Container, Jumbotron, Row, Col } from "react-bootstrap";
+import API from "../../utils/API"
 
-export default function RecipeForm() {
+export default function RecipeForm(props) {
   const newIng = { ingredient: "", measure: "" };
   const [ingredients, setIngredients] = useState([{ ...newIng }]);
   const [name, setName] = useState("");
-  const [category, setCategory] = useState("");
+  const [instructions, setInstructions] = useState("");
   const [alcoholic, setAlcholic] = useState("");
   const [shared, setShared] = useState(false);
 
@@ -15,11 +16,15 @@ export default function RecipeForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(`Name: ${name}
-    Category: ${category}
-    Alcoholic: ${alcoholic}
-    Ingredients: ${ingredients}
-    Shared: ${shared}`);
+    API.newCustom({
+      name: name,
+      alcoholic: alcoholic,
+      instructions: instructions,
+      ingredients: ingredients,
+      shared: shared
+    }).then((result) => {
+      console.log(result)
+    })
   }
 
   const updateFieldChanged = (name, index) => (e) => {
@@ -44,19 +49,6 @@ export default function RecipeForm() {
               placeholder="Cocktail Name"
               onChange={(e) => setName(e.target.value)}
             />
-          </Form.Group>
-          <Form.Group controlId="formBasicPassword">
-            <Form.Label>Category</Form.Label>
-            <Form.Control
-              as="select"
-              onChange={(e) => setCategory(e.target.value)}
-            >
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </Form.Control>
           </Form.Group>
           <Form.Group as={Row}>
             <Col>
@@ -97,6 +89,14 @@ export default function RecipeForm() {
             ))}
             <Button onClick={addInput}>Add Ingredient</Button>
           </Form.Group>
+          <Form.Group controlId="formBasicPassword">
+            <Form.Label>Instructions</Form.Label>
+            <Form.Control
+              as="textarea"
+              onChange={(e) => setInstructions(e.target.value)}
+            >
+            </Form.Control>
+          </Form.Group>
           <Form.Group controlId="formBasicCheckbox">
             <Form.Check
               type="checkbox"
@@ -104,7 +104,6 @@ export default function RecipeForm() {
               onChange={() => setShared(!shared)}
             />
           </Form.Group>
-
           <Button variant="primary" type="submit" onClick={handleSubmit}>
             Save
           </Button>

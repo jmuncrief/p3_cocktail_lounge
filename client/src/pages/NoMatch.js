@@ -20,7 +20,6 @@ const NoMatch = () => {
         </Col>
       </Row>
     </Container>
-    <RecipeForm />
     </>
   );
 };
