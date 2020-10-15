@@ -3,8 +3,6 @@ import { Button, Form, FormControl, Navbar, NavDropdown, Nav, Dropdown, Dropdown
 import "./Header.css";
 import API from "../../utils/axiosCalls"
 
-
-
 function Header() {
 
     const [headerState, setHeaderState] = useState({
