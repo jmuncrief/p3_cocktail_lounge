@@ -9,16 +9,15 @@ function RecipeJumbo() {
   const ingRef = useRef();
 
   function addToFaves() {
-    console.log(ingRef.current.innerHTML)
-    // API.addFavorite({
-    //   drinkId: "", // do we need to save this?
-    //   name: "",
-    //   category: "", // or this?
-    //   alcoholic: "",
-    //   imageURL: "",
-    //   instructions: "",
-    //   ingredients: "",
-    // })
+    API.addFavorite({
+      name: "a new favorite",
+      alcoholic: true,
+      imageURL: "imageURL here",
+      instructions: "be careful",
+      ingredients: "water",
+    }).then((result) => {
+      console.log(result)
+    })
   }
   return (
     <Container className="text-center jumbo-sizing">

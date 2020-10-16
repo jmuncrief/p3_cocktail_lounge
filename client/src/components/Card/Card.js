@@ -24,7 +24,6 @@ function Cocktail(props) {
 
 
 
-
         </>
 
     )
