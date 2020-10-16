@@ -3,4 +3,6 @@ const recipeController = require("../../controllers/recipeController");
 
 router.route("/custom").post(recipeController.addCustom)
 
+router.route("/ids").post(recipeController.getCustRec)
+
 module.exports = router;
