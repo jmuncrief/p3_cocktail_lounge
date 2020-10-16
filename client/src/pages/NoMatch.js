@@ -1,7 +1,6 @@
 import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import RecipeForm from "../components/RecipeForm/RecipeForm";
 
 const NoMatch = () => {
   return (

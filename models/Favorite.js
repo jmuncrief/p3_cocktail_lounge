@@ -6,9 +6,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const FavoriteSchema = new Schema({
-  drinkId: { type: String, required: true },
   name: { type: String, required: true },
-  category: { type: String, required: true },
   alcoholic: { type: Boolean, required: true },
   imageURL: { type: String, required: true },
   instructions: { type: String, required: true },
