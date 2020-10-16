@@ -1,0 +1,15 @@
+.create-recipe { 
+    background-color: rgb(133, 128, 128);  
+    border: 6px double rgb(255, 0, 0); 
+
+}  
+
+.recipe-title { 
+    color: red; 
+    text-align: center;
+} 
+
+.recipe-box-title { 
+    font-weight: bold; 
+    font-size: 25px;
+}
