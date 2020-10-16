@@ -27,9 +27,10 @@ export default function FaveList(props) {
 
   return (
     <>
-      <ListGroup>
+    <h2 className="favorites-title">My Favorites</h2>
+      <ListGroup className="fav-box">
         {names.map((name) => (
-          <ListGroup.Item action>
+          <ListGroup.Item className="fav-list" action>
             {name}
           </ListGroup.Item>
         ))}

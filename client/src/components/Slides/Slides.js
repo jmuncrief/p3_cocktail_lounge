@@ -6,7 +6,7 @@ import "./Slides.css"
 
 const Slides = () => {
   return (
-    <Container>
+    <Container fluid style={{height: "100%"}}>
       <Row className="text-center">
         <Col>
           <Carousel>
