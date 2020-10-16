@@ -6,7 +6,7 @@ import "./FavoritesList.css"
 function Fav() {
     return (  
         <>
-        <h1 className="favorites-title">My Favorites</h1>
+        <h2 className="favorites-title">My Favorites</h2>
         <ListGroup className="fav-box" defaultActiveKey="#link1">
             <ListGroup.Item className="fav-list" action href="#link1">
                 Margarita

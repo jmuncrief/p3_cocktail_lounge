@@ -7,7 +7,7 @@ import "./Card.css"
 function Cocktail() {
     return (
         <>
-            <Card border="danger" style={{ borderWidth: '3px', width: '18rem' }} className="cocktail" >
+            <Card border="danger" style={{ width: '18rem' }} className="cocktail" >
                 <Card.Body>
                     <Card.Title className="title">Margarita</Card.Title>
 

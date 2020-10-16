@@ -41,7 +41,7 @@ export default function RecipeForm(props) {
 
   return ( 
     <>
-      <h1 className="recipe-title">Create A Recipe</h1>
+      <h2 className="recipe-title">Create A Recipe</h2>
       <Container fluid>
         <Row>
           <Col>
