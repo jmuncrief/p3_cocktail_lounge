@@ -7,7 +7,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Logins from "./components/LoginSign/Logins";
 import RecipeJumbo from "./components/RecipeJumbo/RecipeJumbo";
-import MembersSearch from "./components/MemberSearch/MemberSearch";
+// import MembersSearch from "./components/MemberSearch/MemberSearch";
 import "./App.css"
 
 // Pages
@@ -32,7 +32,6 @@ function App() {
           <Route exact path="/recipejumbo" component={RecipeJumbo} />
           <Route component={NoMatch} />
         </Switch>
-        <Footer />
       </div>
     </Router>
   );

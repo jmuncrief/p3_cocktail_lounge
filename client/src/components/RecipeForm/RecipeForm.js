@@ -3,7 +3,7 @@ import { Form, Button, Container, Jumbotron, Row, Col } from "react-bootstrap";
 import API from "../../utils/API";
 import "./RecipeForm.css"
 
-export default function RecipeForm(props) {
+export default function RecipeForm() {
   const newIng = { ingredient: "", measure: "" };
   const [ingredients, setIngredients] = useState([{ ...newIng }]);
   const [name, setName] = useState("");

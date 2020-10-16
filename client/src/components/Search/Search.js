@@ -1,16 +1,17 @@
 import React, { useRef, useState } from "react";
-import { Button, Form, FormControl, Navbar, NavDropdown, Nav, Dropdown, DropdownButton } from 'react-bootstrap';
+import { Button, Form, FormControl, Navbar, NavDropdown, Nav, Dropdown, DropdownButton, Container, Row, Col, CardDeck } from 'react-bootstrap';
+import Cocktail from "../Card/Card"
 import "./Search.css"
 import API from "../../utils/axiosCalls"
-
 function Search() {
 
     const [searchState, setSearchState] = useState({
         searchType: "Drink Name",
         dropdownTitle: "Search for:",
-        query: ""
-
+        query: "",
     })
+
+    const [results, setResults] = useState([])
 
     // Runs when dropdown value is changed; changes searchType
     function searchSelect(e) {
@@ -21,16 +22,15 @@ function Search() {
         switch (searchState.searchType) {
             case "Ingredient": {
                 const { data } = await API.filterIngredient(query)
-                console.log(data.drinks)
+                setResults(data.drinks)
             } break;
             case "Drink Name": {
                 const { data } = await API.searchCocktailName(query)
-                console.log(data.drinks)
+                setResults(data.drinks)
             } break;
             default:
                 break;
         }
-
     }
 
     async function randSearch() {
@@ -38,24 +38,33 @@ function Search() {
         console.log(data.drinks[0])
     }
 
-
     return (
-        <div>
-            <Form inline className="searchComp">
-                <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={(e) => setSearchState({ ...searchState, query: e.target.value })} />
+        <>
+            <div>
+                <Form inline className="searchComp">
+                    <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={(e) => setSearchState({ ...searchState, query: e.target.value })} />
+                    <DropdownButton variant="danger" alignRight title={searchState.dropdownTitle} id="search-dropdown" onSelect={searchSelect}>
+                        <Dropdown.Item eventKey="Drink Name">Drink Name</Dropdown.Item>
+                        <Dropdown.Item eventKey="Ingredient">Ingredient</Dropdown.Item>
+                    </DropdownButton>
+                    <Button className="search-btn" onClick={() => search(searchState.query)} variant="outline-success">Search</Button>
+                    <Button className="search-btn" onClick={() => randSearch()} variant="outline-success">Random</Button>
+                </Form>
+            </div>
+            <CardDeck style={{justifyContent: "space-between" }}>
 
-                <DropdownButton variant="danger" alignRight title={searchState.dropdownTitle} id="search-dropdown" onSelect={searchSelect}>
-                    <Dropdown.Item eventKey="Drink Name">Drink Name</Dropdown.Item>
-                    <Dropdown.Item eventKey="Ingredient">Ingredient</Dropdown.Item>
-                </DropdownButton>
 
-                <Button className="search-btn" onClick={() => search(searchState.query)} variant="outline-success">Search</Button>
-                <Button className="search-btn" onClick={() => randSearch()} variant="outline-success">Random</Button>
+                {
+                    results.map(element => (
 
-            </Form>
-        </div>
+                        <Cocktail style={{ display: "inline-block", justifyContent: "center" }} id={element.idDrink} name={element.strDrink} img={element.strDrinkThumb} />
+
+                    ))
+                }
+
+
+            </CardDeck>
+        </>
     )
-
 }
-
 export default Search

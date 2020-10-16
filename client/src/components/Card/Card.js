@@ -1,24 +1,28 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
-import { Container } from 'react-bootstrap';
+import { Container, CardDeck } from 'react-bootstrap';
 import "./Card.css"
 
 
-function Cocktail() {
+function Cocktail(props) {
     return (
         <>
-            <Card border="danger" style={{ width: '18rem' }} className="cocktail" >
-                <Card.Body>
-                    <Card.Title className="title">Margarita</Card.Title>
+            <CardDeck style={{display: 'flex', flexDirection: 'row'}} >
 
-                </Card.Body>
-                <Card.Img variant="bottom" className="responsive"  src="http://placekitten.com/100/100" alt="cocktail-image"/>
 
-            </Card>
+                <Card border="danger" style={{ width: '18rem', flex: 1 }} className="cocktail" drinkID={props.ID} >
+                    {/* <Card.Body> */}
+                        <Card.Title className="title">{props.name}</Card.Title>
+
+                    {/* </Card.Body> */}
+                    <Card.Img variant="bottom" className="responsive" src={props.img} alt="cocktail-image" />
+
+                </Card>
+            </CardDeck>
+
+
 
         </>
-
-
 
     )
 }
