@@ -11,7 +11,6 @@ export default {
         return axios.post("/api/recipe/ids", ids)
     },
     addFavorite: function(recipeData) {
-<<<<<<< HEAD
         return axios.post("/api/recipe/fave", recipeData)
     },
     getFavorites: function(ids) {
@@ -22,8 +21,5 @@ export default {
     },
     getOneCustRecipe: function(name) {
         return axios.post("api/recipe/onecust", name)
-=======
-        return axios.post("/api/recipe/fave")
->>>>>>> 045158ed0d78e5b2c1a4a2fd36b08c5c58e462a6
     }
 }

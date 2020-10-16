@@ -32,7 +32,6 @@ function App() {
           <Route exact path="/recipejumbo" component={RecipeJumbo} />
           <Route component={NoMatch} />
         </Switch>
-        <Footer />
       </div>
     </Router>
   );
