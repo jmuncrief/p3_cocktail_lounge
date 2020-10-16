@@ -12,5 +12,14 @@ export default {
     },
     addFavorite: function(recipeData) {
         return axios.post("/api/recipe/fave", recipeData)
+    },
+    getFavorites: function(ids) {
+        return axios.post("api/recipe/faves", ids)
+    },
+    getOneFaveRecipe: function(name) {
+        return axios.post("api/recipe/onefave", name)
+    },
+    getOneCustRecipe: function(name) {
+        return axios.post("api/recipe/onecust", name)
     }
 }
