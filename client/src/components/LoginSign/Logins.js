@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { Jumbotron, Container, Row, Col, Form, Button } from "react-bootstrap";
-import "./style.css";
 import API from "../../utils/API";
 import { useHistory } from "react-router-dom";
 import { LOGIN } from "../../utils/actions";
 import { useStoreContext } from "../../utils/GlobalState";
-
 
 function Logins() {
   const history = useHistory();
@@ -139,12 +137,7 @@ function Logins() {
         </Row>
       </Jumbotron>
     </Container>
-  )
+  );
 }
 
 export default Logins;
-
-
-
-
-

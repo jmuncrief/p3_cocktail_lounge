@@ -3,9 +3,9 @@ import "./Footer.css"
 
 function Footer() {
     return (
-        <>
-        <footer class="footer fixed-bottom py-2 w-100">&copy; Copyright stuff</footer>
-        </>
+        <div className="fixed-bottom">
+        <div className="footer py-2 w-100">&copy; Copyright stuff</div>
+        </div>
     )
 } 
 

@@ -39,8 +39,8 @@
 
 body { 
   background-color: black;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  border: 10px ridge rgb(255, 255, 255);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; 
+  
 }  
 
 /* img { 
