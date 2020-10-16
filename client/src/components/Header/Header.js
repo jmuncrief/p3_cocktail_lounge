@@ -1,12 +1,11 @@
-import React, { useRef, useState } from "react";
-import { Button, Form, FormControl, Navbar, NavDropdown, Nav, Dropdown, DropdownButton } from 'react-bootstrap';
+import React from "react";
+import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
 import "./Header.css";
-import API from "../../utils/axiosCalls"
 
 function Header() {
 
     return (
-        <Navbar bg="" expand="lg" class="navbar">
+        <Navbar bg="" expand="lg" className="navbar">
             <Navbar.Brand href="/home" id="title">Cocktail Lounge</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

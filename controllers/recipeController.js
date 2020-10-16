@@ -17,4 +17,10 @@ module.exports = {
         res.json(err);
       });
   },
+  getCustRec: function(req,res) {
+      db.Custom.findById(req.params.id)
+      .then((dbCust) => {
+          res.json(dbCust)
+      })
+  }
 };

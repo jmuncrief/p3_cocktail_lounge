@@ -5,9 +5,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //caused the site to not compile in the browser. Unsure as to why as of yet.
 import Header from "./components/Header/Header"; 
 import Footer from "./components/Footer/Footer";  
-import Logins from "./components/LoginSign/Logins";
+// import Logins from "./components/LoginSign/Logins";
 import RecipeJumbo from "./components/RecipeJumbo/RecipeJumbo";
-import MembersSearch from "./components/MemberSearch/MemberSearch";
+// import MembersSearch from "./components/MemberSearch/MemberSearch";
 import "./App.css"
 
 // Pages
@@ -26,7 +26,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/login" component={Login} />
-          <Route exact path="/login" component={Login} />
+          <PrivateRoute exact path="/members" component={Members} />
           <Route exact path="/recipejumbo" component={RecipeJumbo} />
           <Route component={NoMatch} />
         </Switch> 

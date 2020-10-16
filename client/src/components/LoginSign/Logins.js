@@ -7,7 +7,7 @@ import { useStoreContext } from "../../utils/GlobalState";
 
 function Logins() {
   const history = useHistory();
-  const [state, dispatch] = useStoreContext();
+  const [state, dispatch] = useStoreContext(); //eslint-disable-line
 
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");

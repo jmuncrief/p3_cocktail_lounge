@@ -1,5 +1,5 @@
-import React, { useRef, useState } from "react";
-import { Button, Form, FormControl, Navbar, NavDropdown, Nav, Dropdown, DropdownButton } from 'react-bootstrap';
+import React, { useState } from "react";
+import { Button, Form, FormControl, Dropdown, DropdownButton } from 'react-bootstrap';
 import "./Search.css"
 import API from "../../utils/axiosCalls"
 

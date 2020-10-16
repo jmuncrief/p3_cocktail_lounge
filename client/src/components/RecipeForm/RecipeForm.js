@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Form, Button, Container, Jumbotron, Row, Col } from "react-bootstrap";
 import API from "../../utils/API"
 
-export default function RecipeForm(props) {
+export default function RecipeForm() {
   const newIng = { ingredient: "", measure: "" };
   const [ingredients, setIngredients] = useState([{ ...newIng }]);
   const [name, setName] = useState("");
@@ -70,7 +70,7 @@ export default function RecipeForm(props) {
           </Form.Group>
           <Form.Group>
             {ingredients.map((ing, idx) => (
-              <Form.Row>
+              <Form.Row key={idx}>
                 <Col xs={6}>
                   <Form.Control
                     type="text"
