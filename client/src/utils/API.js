@@ -7,7 +7,10 @@ export default {
     newCustom: function(recipeData) {
         return axios.post("/api/recipe/custom", recipeData);
     },
-    getCustoms: function(id) {
-        return axios.get("/api/recipe/"+id)
+    getCustoms: function(ids) {
+        return axios.post("/api/recipe/ids", ids)
+    },
+    addFavorite: function(recipeData) {
+        return axios.post("/api/recipe/fave")
     }
 }
