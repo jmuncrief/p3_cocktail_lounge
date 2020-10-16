@@ -1,24 +1,20 @@
 import React, { useRef, useState } from "react";
-import { Button, Form, FormControl, Navbar, NavDropdown, Nav, Dropdown, DropdownButton } from 'react-bootstrap';
+import { Button, Form, FormControl, Navbar, NavDropdown, Nav, Dropdown, DropdownButton, Container, Row, Col, CardDeck } from 'react-bootstrap';
 import Cocktail from "../Card/Card"
 import "./Search.css"
 import API from "../../utils/axiosCalls"
 function Search() {
-
     const [searchState, setSearchState] = useState({
         searchType: "Drink Name",
         dropdownTitle: "Search for:",
         query: "",
     })
-
     const [results, setResults] = useState([])
     const [recState, setRecState] = useState({})
-
     // Runs when dropdown value is changed; changes searchType
     function searchSelect(e) {
         setSearchState({ ...searchState, searchType: e, dropdownTitle: e })
     }
-
     async function search(query) {
         switch (searchState.searchType) {
             case "Ingredient": {
@@ -33,17 +29,14 @@ function Search() {
                 break;
         }
     }
-
     async function randSearch() {
         const { data } = await API.random()
         console.log(data.drinks[0])
     }
-
     async function idSearch(id) {
         const { data } = await API.lookupCocktailID(id)
         setRecState(data.drinks[0])
     }
-
     return (
         <>
             <div>
@@ -57,15 +50,13 @@ function Search() {
                     <Button className="search-btn" onClick={() => randSearch()} variant="outline-success">Random</Button>
                 </Form>
             </div>
-            <div>
+            <CardDeck style={{justifyContent: "space-between" }}>
                 {
                     results.map(element => (
-
-                        <Cocktail id={element.idDrink} name={element.strDrink} img={element.strDrinkThumb} idSearch={() => idSearch(element.idDrink)} />
-
+                        <Cocktail style={{ display: "inline-block", justifyContent: "center" }} id={element.idDrink} name={element.strDrink} img={element.strDrinkThumb} idSearch={() => idSearch(element.idDrink)} />
                     ))
                 }
-            </div>
+            </CardDeck>
         </>
     )
 }
