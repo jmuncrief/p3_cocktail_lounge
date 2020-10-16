@@ -4,7 +4,7 @@ import "./Header.css";
 
 function Header() {
     return (
-        <Navbar bg="" expand="lg" class="navbar">
+        <Navbar bg="" expand="lg" className="navbar">
             <Navbar.Brand href="/home" id="webpage-title">Cocktail Lounge</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
