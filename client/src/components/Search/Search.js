@@ -12,6 +12,7 @@ function Search() {
     })
 
     const [results, setResults] = useState([])
+    const [recState, setRecState] = useState({})
 
     // Runs when dropdown value is changed; changes searchType
     function searchSelect(e) {
@@ -38,6 +39,11 @@ function Search() {
         console.log(data.drinks[0])
     }
 
+    async function idSearch(id) {
+        const { data } = await API.lookupCocktailID(id)
+        setRecState(data.drinks[0])
+    }
+
     return (
         <>
             <div>
@@ -57,7 +63,7 @@ function Search() {
                 {
                     results.map(element => (
 
-                        <Cocktail style={{ display: "inline-block", justifyContent: "center" }} id={element.idDrink} name={element.strDrink} img={element.strDrinkThumb} />
+                        <Cocktail style={{ display: "inline-block", justifyContent: "center" }} id={element.idDrink} name={element.strDrink} img={element.strDrinkThumb} idSearch={() => idSearch(element.idDrink)} />
 
                     ))
                 }
