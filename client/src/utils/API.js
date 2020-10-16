@@ -11,6 +11,6 @@ export default {
         return axios.post("/api/recipe/ids", ids)
     },
     addFavorite: function(recipeData) {
-        return axios.post("/api/recipe/fave")
+        return axios.post("/api/recipe/fave", recipeData)
     }
 }

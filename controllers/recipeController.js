@@ -22,4 +22,16 @@ module.exports = {
       res.json(dbCust);
     });
   },
+  addFavorite: function (req,res) {
+      db.Favorite.create(req.body)
+      .then(({ _id }) => db.User.findOneAndUpdate(
+          {},
+          { $push: {_favorites: _id }},
+          {new: true}
+      )).then((dbFave) => {
+          res.json(dbFave);
+      }).catch((err) => {
+          res.json(err)
+      })
+  }
 };

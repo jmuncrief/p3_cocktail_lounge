@@ -15,7 +15,6 @@ function Cocktail() {
                 <Card.Img variant="bottom" className="responsive"  src="http://placekitten.com/100/100" alt="cocktail-image"/>
 
             </Card>
-
         </>
 
 
