@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 import "./style.css";
 
-function Members() {
+function MembersSearch() {
   return (
     <Container>
         <h1 className="white-text">Search</h1>
@@ -69,4 +69,4 @@ function Members() {
   );
 }
 
-export default Members;
+export default MembersSearch;
