@@ -6,7 +6,7 @@ import { useStoreContext } from "./GlobalState";
 function PrivateRoute({ component: Component, ...props }) {
   const [state] = useStoreContext();
   if (state.auth) return <Route component={Component} {...props} />;
-  return <Redirect to="/login" />;
+  return <Redirect to="/logins" />;
 }
 
 export default PrivateRoute;

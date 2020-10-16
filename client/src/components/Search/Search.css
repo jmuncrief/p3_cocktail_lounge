@@ -4,18 +4,11 @@
     justify-content: center;
 } 
 
-.checkboxes { 
-    text-align: justify; 
-    color: red; 
-    justify-content: end;
-}  
-
-.searchComp {  
-    
-    
-    
  
-    
+
+.search-btn {  
+    margin: 0 0 0 10px;
+
 }
 
 

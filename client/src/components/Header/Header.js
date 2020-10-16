@@ -1,17 +1,15 @@
 import React, { useRef, useState } from "react";
-import { Button, Form, FormControl, Navbar, NavDropdown, Nav, Dropdown, DropdownButton } from 'react-bootstrap';
+import {  Navbar, NavDropdown, Nav, Dropdown, DropdownButton } from 'react-bootstrap';
 import "./Header.css";
-import API from "../../utils/axiosCalls"
 
 function Header() {
-
     return (
         <Navbar bg="" expand="lg" class="navbar">
-            <Navbar.Brand href="/home" id="title">Cocktail Lounge</Navbar.Brand>
+            <Navbar.Brand href="/home" id="webpage-title">Cocktail Lounge</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/home" className="hpLink">Favorites</Nav.Link>
+                    <Nav.Link href="/members" className="hpLink">Members</Nav.Link>
                     <NavDropdown title="Sort by liquor" id="nav-dropdown">
                         <NavDropdown.Item className="liquors" href="#action/3.1">Vodka</NavDropdown.Item>
                         <NavDropdown.Item className="liquors" href="#action/3.2">Rum</NavDropdown.Item>

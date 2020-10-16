@@ -44,13 +44,13 @@ function Search() {
             <Form inline className="searchComp">
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={(e) => setSearchState({ ...searchState, query: e.target.value })} />
 
-                <DropdownButton alignRight title={searchState.dropdownTitle} id="search-dropdown" onSelect={searchSelect}>
+                <DropdownButton variant="danger" alignRight title={searchState.dropdownTitle} id="search-dropdown" onSelect={searchSelect}>
                     <Dropdown.Item eventKey="Drink Name">Drink Name</Dropdown.Item>
                     <Dropdown.Item eventKey="Ingredient">Ingredient</Dropdown.Item>
                 </DropdownButton>
 
-                <Button onClick={() => search(searchState.query)} variant="outline-success">Search</Button>
-                <Button onClick={() => randSearch()} variant="outline-success">Random</Button>
+                <Button className="search-btn" onClick={() => search(searchState.query)} variant="outline-success">Search</Button>
+                <Button className="search-btn" onClick={() => randSearch()} variant="outline-success">Random</Button>
 
             </Form>
         </div>
