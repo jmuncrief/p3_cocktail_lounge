@@ -9,20 +9,16 @@ function Search() {
         searchType: "Drink Name",
         dropdownTitle: "Search for:",
         query: "",
-        searchResults: []
     })
+
+    const [results, setResults] = useState([])
 
     // Runs when dropdown value is changed; changes searchType
     function searchSelect(e) {
         setSearchState({ ...searchState, searchType: e, dropdownTitle: e })
     }
-
-    function handleResults(results) {
-        console.log("Results: ", results)
-        setSearchState({ ...searchState, searchResults: results })
-        console.log("function ran!")
-        console.log("State: ", searchState)
-    }
+    console.log("results: ", results)
+    console.log("results: ", results)
 
     async function search(query) {
         switch (searchState.searchType) {
@@ -30,15 +26,13 @@ function Search() {
                 const { data } = await API.filterIngredient(query)
                 console.log("data.drinks: ", data.drinks)
                 // handleResults(data.drinks)
-                setSearchState({...searchState, searchResults: data.drinks})
-                console.log("searchState.searchResults: ", searchState.searchResults)
+                setResults(data.drinks)
             } break;
             case "Drink Name": {
                 const { data } = await API.searchCocktailName(query)
                 console.log("data.drinks: ", data.drinks)
                 // handleResults(data.drinks)
-                setSearchState({...searchState, searchResults: data.drinks})
-                console.log("searchState.searchResults: ", searchState.searchResults)
+                setResults(data.drinks)
             } break;
             default:
                 break;
