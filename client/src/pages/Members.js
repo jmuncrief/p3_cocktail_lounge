@@ -6,11 +6,7 @@ import Fav from "../components/FavoritesList/FavoritesList";
 
 export default function Members() {
   const [name, setName] = useState("");
-<<<<<<< HEAD
   const [faves, setFaves] = useState([]);
-=======
-  const [faves, setFaves] = useState("");
->>>>>>> 045158ed0d78e5b2c1a4a2fd36b08c5c58e462a6
   const [cust, setCust] = useState([]);
   const [userId, setUserId] = useState("");
 
