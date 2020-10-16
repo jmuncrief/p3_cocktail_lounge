@@ -6,5 +6,11 @@ export default {
     },
     newCustom: function(recipeData) {
         return axios.post("/api/recipe/custom", recipeData);
+    },
+    getCustoms: function(ids) {
+        return axios.post("/api/recipe/ids", ids)
+    },
+    addFavorite: function(recipeData) {
+        return axios.post("/api/recipe/fave")
     }
 }
