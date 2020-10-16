@@ -11,10 +11,6 @@ function Fav() {
             <ListGroup.Item className="fav-list" action href="#link1">
                 Margarita
             </ListGroup.Item>
-            <ListGroup.Item className="fav-list" action href="#link2">
-                Old Fashioned
-            </ListGroup.Item>
-          
         </ListGroup> 
         </>
     );

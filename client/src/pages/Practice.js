@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import RecipeForm from '../components/RecipeForm/RecipeForm'
 import Search from '../components/Search/Search'
 import Fav from '../components/FavoritesList/FavoritesList'
+import StarRating from '../components/StarRating/StarRating'
 
 
 
@@ -22,7 +23,7 @@ export default function Practice() {
 
                     </Col>
                     <Col>
-                        <Fav />
+                        <Fav /> 
 
                     </Col>
                 </Row>

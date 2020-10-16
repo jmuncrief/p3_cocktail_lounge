@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Button, Form, FormControl, Navbar, NavDropdown, Nav, Dropdown, DropdownButton } from 'react-bootstrap';
+import {  Navbar, NavDropdown, Nav, Dropdown, DropdownButton } from 'react-bootstrap';
 import "./Header.css";
 
 function Header() {
@@ -9,7 +9,7 @@ function Header() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/members" className="hpLink">Favorites</Nav.Link>
+                    <Nav.Link href="/members" className="hpLink">Members</Nav.Link>
                     <NavDropdown title="Sort by liquor" id="nav-dropdown">
                         <NavDropdown.Item className="liquors" href="#action/3.1">Vodka</NavDropdown.Item>
                         <NavDropdown.Item className="liquors" href="#action/3.2">Rum</NavDropdown.Item>
