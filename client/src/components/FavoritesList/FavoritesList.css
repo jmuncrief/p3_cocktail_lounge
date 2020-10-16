@@ -1,0 +1,14 @@
+.favorites-title { 
+    color: red; 
+    text-align: center;
+} 
+
+.fav-box { 
+    border: 6px double rgb(255, 0, 0); 
+} 
+
+.fav-list { 
+    background-color: rgb(133, 128, 128);  
+    font-size: 20px;  
+    color: black;
+}
