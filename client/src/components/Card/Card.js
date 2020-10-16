@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
-import { Container } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import "./Card.css"
 
 
@@ -13,6 +13,8 @@ function Cocktail(props) {
 
                 </Card.Body>
                 <Card.Img variant="bottom" className="responsive" src={props.img} alt="cocktail-image" />
+
+                <Button key={props.ID} className="search-btn" onClick={props.idSearch} variant="outline-success">See Recipe</Button>
 
             </Card>
 
