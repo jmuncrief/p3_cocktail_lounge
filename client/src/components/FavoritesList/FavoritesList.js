@@ -8,8 +8,6 @@ function Fav(props) {
   const [custNames, setCustNames] = useState([]);
   const [faveNames, setFaveNames] = useState([]);
   const [show, setShow] = useState(false);
-  const nameRef = useRef();
-  const query = "a new favorite";
   const [modalState, setModalState] = useState({
     name: "",
     img: "",
@@ -21,7 +19,7 @@ function Fav(props) {
 
   const handleClose = () => {
       setShow(false)};
-  const handleShow = (e) => {
+  const handleFaveShow = (e) => {
       API.getOneFaveRecipe(e.target.value).then((res) => {
           console.log(res.data);
           setModalState({
@@ -34,8 +32,23 @@ function Fav(props) {
           setShow(true);
     })}
 
+    const handleCustShow = (e) => {
+      API.getOneCustRecipe(e.target.value).then((res) => {
+          console.log(res.data);
+          let ingredientsArr = []
+          res.data.ingredients.map((obj => {
+            ingredientsArr.push(`${obj.ingredient} ${obj.measure}`)
+          }))
+          setModalState({
+            name: res.data.name,
+            ingredients: ingredientsArr,
+            instructions: res.data.instructions,
+            alcoholic: res.data.alcoholic
+          });
+          setShow(true);
+    })}
+
   function getCustRecipes(arr) {
-    // console.log(arr);
     API.getCustoms(arr).then((res) => {
       console.log(res.data);
       let drinkNames = [];
@@ -66,7 +79,7 @@ function Fav(props) {
       <h2 className="favorites-title">My Custom Recipes</h2>
       <ListGroup className="fav-box">
         {custNames.map((name) => (
-          <ListGroup.Item className="fav-list" action ref={nameRef} >
+          <ListGroup.Item className="fav-list" action value={name} onClick={(e) => handleCustShow(e)}>
             {name}
           </ListGroup.Item>
         ))}
@@ -74,7 +87,7 @@ function Fav(props) {
       <h2 className="favorites-title">My Favorites</h2>
       <ListGroup className="fav-box">
         {faveNames.map((name) => (
-          <ListGroup.Item className="fav-list" action ref={nameRef} value={name} onClick={(e) => handleShow(e)}>
+          <ListGroup.Item className="fav-list" action value={name} onClick={(e) => handleFaveShow(e)}>
             {name}
           </ListGroup.Item>
         ))}
