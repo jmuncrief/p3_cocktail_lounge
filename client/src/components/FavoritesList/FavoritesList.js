@@ -9,15 +9,30 @@ function Fav(props) {
   const [faveNames, setFaveNames] = useState([]);
   const [show, setShow] = useState(false);
   const nameRef = useRef();
-  const query = {abc: "a new favorite"}
+  const query = "a new favorite";
+  const [modalState, setModalState] = useState({
+    name: "",
+    img: "",
+    ingredients: [],
+    instructions: "",
+    alcoholic: ""
+  });
+
 
   const handleClose = () => {
       setShow(false)};
-  const handleShow = () => {
-      API.getOneFaveRecipe(query).then((res) => {
-          console.log(res)
-    })
-    setShow(true)};
+  const handleShow = (e) => {
+      API.getOneFaveRecipe(e.target.value).then((res) => {
+          console.log(res.data);
+          setModalState({
+            name: res.data.name,
+            img: res.data.img,
+            ingredients: res.data.ingredients,
+            instructions: res.data.instructions,
+            alcoholic: res.data.alcoholic
+          });
+          setShow(true);
+    })}
 
   function getCustRecipes(arr) {
     // console.log(arr);
@@ -59,11 +74,30 @@ function Fav(props) {
       <h2 className="favorites-title">My Favorites</h2>
       <ListGroup className="fav-box">
         {faveNames.map((name) => (
-          <ListGroup.Item className="fav-list" action ref={nameRef} onClick={handleShow}>
+          <ListGroup.Item className="fav-list" action ref={nameRef} value={name} onClick={(e) => handleShow(e)}>
             {name}
           </ListGroup.Item>
         ))}
       </ListGroup>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title><h2>{modalState.name}</h2>{(() => {
+            if (modalState.alcoholic) {
+              return <h4>Alcoholic</h4>
+            } return <h4>Non-Alcoholic</h4>
+          })()}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h4>Ingredients:</h4><ul>{modalState.ingredients.map((ing) => (
+        <li>{ing}</li>))}</ul>
+        <h4>Instructions:</h4><p>{modalState.instructions}</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 }
