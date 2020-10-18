@@ -10,11 +10,11 @@ function RecipeJumbo() {
 
   function addToFaves() {
     API.addFavorite({
-      name: "a new favorite",
-      alcoholic: true,
-      imageURL: "imageURL here",
-      instructions: "be careful",
-      ingredients: "water",
+      name: "example cocktail",
+      alcoholic: false,
+      imageURL: "http://placehold.it/100x100",
+      instructions: "Fill glass half-way with vodka and half-way with more vodka",
+      ingredients: ["vodka", "more vodka", "maybe ice"],
     }).then((result) => {
       console.log(result)
     })
