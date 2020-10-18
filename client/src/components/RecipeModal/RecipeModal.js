@@ -47,7 +47,7 @@ function RecipeModal(props) {
                         Close
             </Button>
                     <Button variant="primary" onClick={() => addToFaves(props.data)}>
-                        Add to Favorites (!logic)
+                        Add to Favorites
             </Button>
                 </Modal.Footer>
             </Modal>
