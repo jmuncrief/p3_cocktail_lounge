@@ -13,8 +13,12 @@ const Home = () => {
           <Slides />
         </Col>
       </Row>  
-      <Row style={{ padding:"20px", justifyContent:"center"}}>
+      {/* removed the justify content as it was pushing the content right and not center. */}
+      <Row style={{ padding:"20px"}}>
         <Search />
+      </Row>
+      <Row>
+
       </Row>
       <div style={{height:"50px" }}></div>
     </Container>

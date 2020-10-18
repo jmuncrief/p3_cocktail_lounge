@@ -1,7 +1,7 @@
 .cocktail {    
     background-color: rgb(133, 128, 128); 
     width: 30%; 
-    height: 400px; 
+    height: 425px; 
     margin-top: 30px; 
     margin-bottom: 60px;  
     border: 6px double red;  
@@ -19,6 +19,7 @@
     font-size: 30px; 
     text-align: center; 
     font-weight: bold; 
+    line-height: 30px;
     
 }  
 
