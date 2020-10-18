@@ -10,7 +10,7 @@ function Cocktail(props) {
             <CardDeck style={{ display: 'flex', flexDirection: 'row' }} >
 
 
-                <Card border="danger" style={{ width: '18rem', flex: 1 }} className="cocktail" drinkID={props.ID} >
+                <Card border="danger" style={{ width: '18rem', flex: 1 }} className="cocktail" drinkid={props.ID} >
                     {/* <Card.Body> */}
                     <Card.Title className="title">{props.name}</Card.Title>
 

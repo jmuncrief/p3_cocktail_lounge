@@ -8,3 +8,5 @@ function sanitizeIngredients(data) {
     }
     return ingredients;
 }
+
+export default sanitizeIngredients
