@@ -17,9 +17,9 @@ export default {
         return axios.post("api/recipe/faves", ids)
     },
     getOneFaveRecipe: function(name) {
-        return axios.post("api/recipe/onefave", name)
+        return axios.post("api/recipe/onefave", {key: name})
     },
     getOneCustRecipe: function(name) {
-        return axios.post("api/recipe/onecust", name)
+        return axios.post("api/recipe/onecust", {key: name})
     }
 }

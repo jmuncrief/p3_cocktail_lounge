@@ -1,8 +1,14 @@
 import React, { useRef, useState } from "react";
 import { Button, Form, FormControl, Navbar, NavDropdown, Nav, Dropdown, DropdownButton, Container, Row, Col, CardDeck } from 'react-bootstrap';
+import Modal from 'react-bootstrap/Modal'
 import Cocktail from "../Card/Card"
+import IngList from "../IngList/IngList"
 import "./Search.css"
 import API from "../../utils/axiosCalls"
+import internalAPI from "../../utils/API"
+import sanitizeIngredients from "../../utils/sanitizeIngredientsIntoArray"
+import sanitizeIngredientsIntoArray from "../../utils/sanitizeIngredientsIntoArray"
+
 function Search() {
     const [searchState, setSearchState] = useState({
         searchType: "Drink Name",
@@ -11,6 +17,12 @@ function Search() {
     })
     const [results, setResults] = useState([])
     const [recState, setRecState] = useState({})
+    const [show, setShow] = useState(false)
+    const [ingArr, setIngArr] = useState([])
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     // Runs when dropdown value is changed; changes searchType
     function searchSelect(e) {
         setSearchState({ ...searchState, searchType: e, dropdownTitle: e })
@@ -36,7 +48,30 @@ function Search() {
     async function idSearch(id) {
         const { data } = await API.lookupCocktailID(id)
         setRecState(data.drinks[0])
+        handleShow()
     }
+
+    function addToFaves(data) {
+        function isAlc() {
+            if (data.strAlcoholic === "Alcoholic") {
+                return (true)
+            } else {
+                return (false)
+            }
+        }
+
+        internalAPI.addFavorite({
+            name: data.strDrink,
+            alcoholic: isAlc(),
+            imageURL: data.strDrinkThumb,
+            instructions: data.strInstructions,
+            ingredients: sanitizeIngredientsIntoArray(data),
+        }).then((result) => {
+            console.log(result)
+
+        })
+    }
+
     return (
         <>
             <div>
@@ -50,13 +85,32 @@ function Search() {
                     <Button className="search-btn" onClick={() => randSearch()} variant="outline-success">Random</Button>
                 </Form>
             </div>
-            <CardDeck style={{justifyContent: "space-between", }}>
+            <CardDeck style={{ justifyContent: "space-between" }}>
                 {
                     results.map(element => (
                         <Cocktail style={{ display: "inline-block", justifyContent: "center" }} id={element.idDrink} name={element.strDrink} img={element.strDrinkThumb} idSearch={() => idSearch(element.idDrink)} />
                     ))
                 }
             </CardDeck>
+
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header className="searchModal-header" closeButton>
+                    <Modal.Title className="searchModal-title">{recState.strDrink}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body className="searchModal-body">
+                    {recState.strInstructions}<br />
+                    <IngList data={recState}/>
+                </Modal.Body>
+                <Modal.Footer className="searchModal-footer">
+                    <Button variant="dark" onClick={handleClose}>
+                        Close
+            </Button>
+                    <Button variant="danger" onClick={() => addToFaves(recState)}>
+                        Add to Favorites
+            </Button>
+                </Modal.Footer>
+            </Modal>
+
         </>
     )
 }
