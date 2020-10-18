@@ -3,6 +3,7 @@ import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 import API from "../../utils/API"
 import sanitizeIngredients from "../../utils/sanitizeIngredients"
+import sanitizeIngredientsIntoArray from "../../utils/sanitizeIngredients"
 
 function RecipeModal(props) {
     const [show, setShow] = useState(false);
@@ -24,7 +25,7 @@ function RecipeModal(props) {
             alcoholic: isAlc(),
             imageURL: data.strDrinkThumb,
             instructions: data.strInstructions,
-            ingredients: sanitizeIngredients(data),
+            ingredients: sanitizeIngredientsIntoArray(data),
         }).then((result) => {
             console.log(result)
         })
