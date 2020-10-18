@@ -94,18 +94,18 @@ function Search() {
             </CardDeck>
 
             <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                    <Modal.Title>{recState.strDrink}</Modal.Title>
+                <Modal.Header className="searchModal-header" closeButton>
+                    <Modal.Title className="searchModal-title">{recState.strDrink}</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body className="searchModal-body">
                     {recState.strInstructions}<br />
                     <IngList data={recState}/>
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                <Modal.Footer className="searchModal-footer">
+                    <Button variant="dark" onClick={handleClose}>
                         Close
             </Button>
-                    <Button variant="primary" onClick={() => addToFaves(recState)}>
+                    <Button variant="danger" onClick={() => addToFaves(recState)}>
                         Add to Favorites
             </Button>
                 </Modal.Footer>

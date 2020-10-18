@@ -1,12 +1,13 @@
 .cocktail {    
     background-color: rgb(133, 128, 128); 
     width: 30%; 
-    height: 400px; 
+    height: 425px; 
     margin-top: 30px; 
     margin-bottom: 60px;  
     border: 6px double red;  
     display: flex;
-   flex-wrap: wrap;
+   flex-wrap: wrap; 
+   object-fit: contain; 
    
   
     
@@ -16,9 +17,19 @@
 } 
 
 .title { 
-    font-size: 30px; 
+    font-size: 25px; 
     text-align: center; 
-    font-weight: bold; 
+    font-weight: bold;  
+    object-fit: contain; 
+    line-height: 30px;  
+    /* overflow: hidden; */
+    /* white-space: nowrap;  
+    text-overflow:ellipsis;   */
+    /* display: flex;
+    flex-direction: row;  */
+    
+     
+    
     
 }  
 

@@ -26,8 +26,9 @@ export default function Members() {
   return (
     <>
       <div style={{ textAlign: "center" }}>
-        <h1>
-          Welcome {name} id: {userId}
+        <h1 className="welcome-member">
+          Welcome {name} 
+           {/* id : {userId}  */}
         </h1>
 
         {/* <RecipeForm id={userId} /> */}
