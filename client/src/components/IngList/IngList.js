@@ -13,7 +13,11 @@ export default function IngList(props) {
     
         for (key in obj){
             txt = obj[key];
+            if(txt){
             list.push(<li> {key} - {txt}</li>);
+            } else {
+                list.push(<li> {key} </li>)
+            }
         }
     
         return list;
