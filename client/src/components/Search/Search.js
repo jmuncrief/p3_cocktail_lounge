@@ -3,6 +3,8 @@ import { Button, Form, FormControl, Navbar, NavDropdown, Nav, Dropdown, Dropdown
 import Cocktail from "../Card/Card"
 import "./Search.css"
 import API from "../../utils/axiosCalls"
+import RecipeModal from "../RecipeModal/RecipeModal"
+
 function Search() {
     const [searchState, setSearchState] = useState({
         searchType: "Drink Name",
@@ -11,6 +13,8 @@ function Search() {
     })
     const [results, setResults] = useState([])
     const [recState, setRecState] = useState({})
+    const [modalState, setModalState] = useState(false)
+
     // Runs when dropdown value is changed; changes searchType
     function searchSelect(e) {
         setSearchState({ ...searchState, searchType: e, dropdownTitle: e })
@@ -37,6 +41,7 @@ function Search() {
         const { data } = await API.lookupCocktailID(id)
         setRecState(data.drinks[0])
     }
+
     return (
         <>
             <div>
@@ -57,6 +62,10 @@ function Search() {
                     ))
                 }
             </CardDeck>
+    
+            <RecipeModal data={recState} show={modalState}/>
+
+
         </>
     )
 }
