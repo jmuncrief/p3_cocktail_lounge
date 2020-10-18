@@ -7,7 +7,6 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Logins from "./components/LoginSign/Logins";
 import RecipeJumbo from "./components/RecipeJumbo/RecipeJumbo";
-// import MembersSearch from "./components/MemberSearch/MemberSearch";
 import "./App.css"
 
 // Pages
@@ -18,6 +17,7 @@ import Members from "./pages/Members";
 import PrivateRoute from "./utils/PrivateRoute";
 import Practice from "./pages/Practice"
 
+//this router function is from react and is how we navigate between pages through the specified routes
 function App() {
   return (
     <Router>

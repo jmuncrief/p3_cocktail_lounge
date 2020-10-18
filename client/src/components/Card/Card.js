@@ -16,8 +16,6 @@ function Cocktail(props) {
 
                     <Card.Img variant="bottom" className="responsive" src={props.img} alt="cocktail-image" />
                     <Button variant="danger" key={props.ID} className="search-btn" onClick={props.idSearch} >See Recipe</Button>
-
-                    {/* </Card.Body> */}
                 </Card>
             </CardDeck>
 
