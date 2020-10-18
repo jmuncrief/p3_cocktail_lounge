@@ -90,6 +90,7 @@ function Search() {
       });
   }
 
+  //I placed the two portions of the return into seperate rows to remove the gap that appeared when you search for old margarita between the 5th and 6th cards.
   return (
     <Col>
       <Row className="text-align-center">
