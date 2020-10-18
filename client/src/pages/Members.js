@@ -6,7 +6,7 @@ import Fav from "../components/FavoritesList/FavoritesList";
 
 export default function Members() {
   const [name, setName] = useState("");
-  const [faves, setFaves] = useState("");
+  const [faves, setFaves] = useState([]);
   const [cust, setCust] = useState([]);
   const [userId, setUserId] = useState("");
 
@@ -17,9 +17,9 @@ export default function Members() {
       .then((res) => res.json())
       .then(({ name, favorites, customs, id }) => {
         setName(name);
+        setUserId(id);
         setFaves(favorites);
         setCust(customs);
-        setUserId(id);
       });
   }, []);
 
@@ -42,7 +42,12 @@ export default function Members() {
           <Col>
             <RecipeForm />
           </Col>
-          <Col>{cust.length > 0 && <Fav customIds={cust} />}</Col>
+          <Col>
+            {(() => {
+             if (cust.length > 0 && faves.length > 0) {
+                return <Fav customIds={cust} favoriteIds={faves} />
+            }})()}
+          </Col>
         </Row>
       </Container>
     </>
