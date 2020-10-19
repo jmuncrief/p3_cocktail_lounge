@@ -45,13 +45,17 @@ function Search() {
       case "Ingredient":
         {
           const { data } = await API.filterIngredient(query);
-          setResults(data.drinks);
+          if (data.drinks) {
+            setResults(data.drinks);
+          } else { setResults([]) }
         }
         break;
       case "Drink Name":
         {
           const { data } = await API.searchCocktailName(query);
-          setResults(data.drinks);
+          if (data.drinks) {
+            setResults(data.drinks);
+          } else { setResults([]) }
         }
         break;
       default:
@@ -60,7 +64,7 @@ function Search() {
   }
   async function randSearch() {
     const { data } = await API.random();
-    console.log(data.drinks[0]);
+    setResults(data.drinks);
   }
   async function idSearch(id) {
     const { data } = await API.lookupCocktailID(id);

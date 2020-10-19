@@ -27,6 +27,7 @@ function Logins() {
       l_name: lname,
     }).then((result) => {
       console.log(result);
+      window.location.reload()
     });
   }
 
