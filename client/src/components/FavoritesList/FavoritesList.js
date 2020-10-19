@@ -93,20 +93,20 @@ function Fav(props) {
         ))}
       </ListGroup>
       <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title><h2>{modalState.name}</h2>{(() => {
+        <Modal.Header className="favModal-header"  closeButton>
+          <Modal.Title className="favModal-title"><h2>{modalState.name}</h2>{(() => {
             if (modalState.alcoholic) {
               return <h4>Alcoholic</h4>
             } return <h4>Non-Alcoholic</h4>
           })()}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="favModal-body">
           <h4>Ingredients:</h4><ul>{modalState.ingredients.map((ing) => (
         <li>{ing}</li>))}</ul>
         <h4>Instructions:</h4><p>{modalState.instructions}</p>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+        <Modal.Footer className="favModal-footer">
+          <Button variant="dark" onClick={handleClose}>
             Close
           </Button>
         </Modal.Footer>

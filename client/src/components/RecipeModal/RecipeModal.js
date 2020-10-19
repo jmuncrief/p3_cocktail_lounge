@@ -3,7 +3,8 @@ import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 import API from "../../utils/API"
 import sanitizeIngredients from "../../utils/sanitizeIngredients"
-import sanitizeIngredientsIntoArray from "../../utils/sanitizeIngredients"
+import sanitizeIngredientsIntoArray from "../../utils/sanitizeIngredients"; 
+
 
 function RecipeModal(props) {
     const [show, setShow] = useState(false);
@@ -36,17 +37,17 @@ function RecipeModal(props) {
         <>
 
             <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
+                <Modal.Header  closeButton>
                     <Modal.Title>{props.data.strDrink}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     {props.data.strInstructions}
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button variant="dark" onClick={handleClose}>
                         Close
             </Button>
-                    <Button variant="primary" onClick={() => addToFaves(props.data)}>
+                    <Button variant="danger" onClick={() => addToFaves(props.data)}>
                         Add to Favorites
             </Button>
                 </Modal.Footer>

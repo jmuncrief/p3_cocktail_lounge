@@ -97,7 +97,7 @@ function Search() {
   //I placed the two portions of the return into seperate rows to remove the gap that appeared when you search for old margarita between the 5th and 6th cards.
   return (
     <Col>
-      <Row className="text-align-center">
+      <Row className="text-align-center" style={{justifyContent: "center"}}>
         <div>
           <Form inline className="searchComp">
             <FormControl
@@ -149,19 +149,19 @@ function Search() {
         </CardDeck>
       </Row>
       <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
+        <Modal.Header  className="searchModal-header" closeButton>
           <Modal.Title>{recState.strDrink}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="searchModal-body">
           {recState.strInstructions}
           <br />
           <IngList data={recState} />
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+        <Modal.Footer className="searchModal-footer">
+          <Button variant="dark" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={() => addToFaves(recState)}>
+          <Button variant="danger" onClick={() => addToFaves(recState)}>
             Add to Favorites
           </Button>
         </Modal.Footer>

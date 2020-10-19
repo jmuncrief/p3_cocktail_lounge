@@ -10,13 +10,6 @@ function Header() {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link href="/members" className="hpLink">Members</Nav.Link>
-                    <NavDropdown title="Sort by liquor" id="nav-dropdown">
-                        <NavDropdown.Item className="liquors" href="#action/3.1">Vodka</NavDropdown.Item>
-                        <NavDropdown.Item className="liquors" href="#action/3.2">Rum</NavDropdown.Item>
-                        <NavDropdown.Item className="liquors" href="#action/3.3">Gin</NavDropdown.Item>
-                        <NavDropdown.Item className="liquors" href="#action/3.3">Tequila</NavDropdown.Item>
-                        <NavDropdown.Item className="liquors" href="#action/3.3">Scotch</NavDropdown.Item>
-                    </NavDropdown>
                 </Nav>
                 <Nav className="">
                     <Nav.Link href="/logins" className="hpLink" style={{ justifyContent: "end" }}>Sign-In</Nav.Link>
