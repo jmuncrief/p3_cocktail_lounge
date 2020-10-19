@@ -35,6 +35,8 @@ app.use(routes);
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/cocktail_lounge", {
   useUnifiedTopology: true,
   useNewUrlParser: true,
+  useCreateIndex: true,
+  useFindAndModify: false
 });
 
 // Start the API server
