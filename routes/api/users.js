@@ -2,6 +2,7 @@ const router = require("express").Router();
 const usersController = require("../../controllers/usersController");
 const passport = require("../../config/passport");
 const isAuthenticated = require("../../config/middleware/isAuthenticated");
+const _ = require("lodash");
 
 // Matches with "/api/users/login"
 router
@@ -19,7 +20,7 @@ router.route("/members").get(isAuthenticated, function (req, res) {
   console.log(req.user);
   res.json({
     id: req.user._id,
-    name: `${req.user.f_name} ${req.user.l_name}`,
+    name: `${_.upperFirst(req.user.f_name)} ${_.upperFirst(req.user.l_name)}`,
     favorites: req.user._favorites,
     customs: req.user._customs
   });
