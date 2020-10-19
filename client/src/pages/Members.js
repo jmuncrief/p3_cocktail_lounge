@@ -8,16 +8,14 @@ export default function Members() {
   const [name, setName] = useState("");
   const [faves, setFaves] = useState([]);
   const [cust, setCust] = useState([]);
-  const [userId, setUserId] = useState("");
 
   useEffect(() => {
     fetch("/api/users/members", {
       method: "GET",
     })
       .then((res) => res.json())
-      .then(({ name, favorites, customs, id }) => {
+      .then(({ name, favorites, customs,}) => {
         setName(name);
-        setUserId(id);
         setFaves(favorites);
         setCust(customs);
       });
@@ -28,10 +26,7 @@ export default function Members() {
       <div style={{ textAlign: "center" }}>
         <h1 className="welcome-member">
           Welcome {name} 
-           {/* id : {userId}  */}
         </h1>
-
-        {/* <RecipeForm id={userId} /> */}
       </div>
 
       <Container>

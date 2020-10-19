@@ -1,5 +1,5 @@
-import React, { useRef, useState } from "react";
-import {  Navbar, NavDropdown, Nav, Dropdown, DropdownButton } from 'react-bootstrap';
+import React from "react";
+import {  Navbar, Nav } from 'react-bootstrap';
 import "./Header.css";
 
 function Header() {

@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
-import { Container, CardDeck, Button } from 'react-bootstrap';
+import { CardDeck, Button } from 'react-bootstrap';
 import "./Card.css"
 
 
