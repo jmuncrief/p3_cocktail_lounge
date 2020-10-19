@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { ListGroup, Modal, Button } from "react-bootstrap";
 import API from "../../utils/API";
 
@@ -36,7 +36,7 @@ function Fav(props) {
       API.getOneCustRecipe(e.target.value).then((res) => {
           console.log(res.data);
           let ingredientsArr = []
-          res.data.ingredients.map((obj => {
+          res.data.ingredients.forEach((obj => {
             ingredientsArr.push(`${obj.ingredient} ${obj.measure}`)
           }))
           setModalState({
@@ -52,7 +52,7 @@ function Fav(props) {
     API.getCustoms(arr).then((res) => {
       console.log(res.data);
       let drinkNames = [];
-      res.data.map((drink) => {
+      res.data.forEach((drink) => {
         drinkNames.push(drink.name);
       });
       setCustNames(drinkNames);
@@ -62,7 +62,7 @@ function Fav(props) {
   function getFaveRecipes(arr) {
     API.getFavorites(arr).then((res) => {
       let drinkNames = [];
-      res.data.map((drink) => {
+      res.data.forEach((drink) => {
         drinkNames.push(drink.name);
       });
       setFaveNames(drinkNames);
@@ -72,7 +72,7 @@ function Fav(props) {
   useEffect(() => {
     getCustRecipes(props.customIds);
     getFaveRecipes(props.favoriteIds);
-  }, []);
+  });
 
   return (
     <>
