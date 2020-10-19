@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 //caused the site to not compile in the browser. Unsure as to why as of yet.
 import Header from "./components/Header/Header";
-import Logins from "./components/LoginSign/Logins";
 import RecipeJumbo from "./components/RecipeJumbo/RecipeJumbo";
 import "./App.css"
 
