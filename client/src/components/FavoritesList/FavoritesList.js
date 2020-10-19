@@ -72,7 +72,8 @@ function Fav(props) {
   useEffect(() => {
     getCustRecipes(props.customIds);
     getFaveRecipes(props.favoriteIds);
-  });
+  }, [props.customIds, props.favoriteIds]);
+
 
   return (
     <>
