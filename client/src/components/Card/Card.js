@@ -7,7 +7,7 @@ import "./Card.css"
 function Cocktail(props) {
     return (
         <>
-            <CardDeck style={{ display: 'flex', flexDirection: 'row' }} >
+            <CardDeck style={{ display: 'flex', flexDirection: 'row', margin: '5px' }} >
 
 
                 <Card border="danger" style={{ width: '18rem', flex: 1 }} className="cocktail" drinkid={props.ID} >
