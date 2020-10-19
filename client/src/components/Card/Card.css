@@ -3,7 +3,7 @@
     width: 30%; 
     height: 425px; 
     margin-top: 30px; 
-    margin-bottom: 60px;  
+    margin-bottom: 60px; 
     border: 6px double red;  
     display: flex;
    flex-wrap: wrap; 

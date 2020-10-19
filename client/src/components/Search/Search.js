@@ -130,7 +130,7 @@ function Search() {
         </div>
       </Row>
       <Row>
-        <CardDeck style={{ justifyContent: "flex-start" }}>
+        <CardDeck style={{ justifyContent: "center" }}>
           {results.map((element) => (
             <Cocktail
               style={{ display: "inline-block", justifyContent: "center" }}
