@@ -11,4 +11,28 @@
     background-color: rgb(133, 128, 128);  
     font-size: 20px;  
     color: black;
+}  
+
+.favModal-header {  
+    border: 6px double red;  
+    background-color: rgb(133, 128, 128);     
+
+}  
+.favModal-title {  
+    font-weight: bold; 
+    font-size: 30px;
+
+} 
+.favModal-body {  
+    background-color:lightgrey; 
+    border: 6px double red;   
+
+}  
+
+.favModal-footer {  
+    border: 6px double red;   
+    background-color: rgb(133, 128, 128); 
+
 }
+
+
