@@ -1,13 +1,13 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
-import { Container, CardDeck, Button } from 'react-bootstrap';
+import { CardDeck, Button } from 'react-bootstrap';
 import "./Card.css"
 
 
 function Cocktail(props) {
     return (
         <>
-            <CardDeck style={{ display: 'flex', flexDirection: 'row' }} >
+            <CardDeck style={{ display: 'flex', flexDirection: 'row', margin: '5px' }} >
 
 
                 <Card border="danger" style={{ width: '18rem', flex: 1 }} className="cocktail" drinkid={props.ID} >

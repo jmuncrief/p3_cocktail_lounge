@@ -1,14 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import {
   Button,
   Form,
   FormControl,
-  Navbar,
-  NavDropdown,
-  Nav,
   Dropdown,
   DropdownButton,
-  Container,
   Row,
   Col,
   CardDeck,
@@ -19,7 +15,6 @@ import IngList from "../IngList/IngList";
 import "./Search.css";
 import API from "../../utils/axiosCalls";
 import internalAPI from "../../utils/API";
-import sanitizeIngredients from "../../utils/sanitizeIngredientsIntoArray";
 import sanitizeIngredientsIntoArray from "../../utils/sanitizeIngredientsIntoArray";
 
 function Search() {
@@ -31,7 +26,6 @@ function Search() {
   const [results, setResults] = useState([]);
   const [recState, setRecState] = useState({});
   const [show, setShow] = useState(false);
-  const [ingArr, setIngArr] = useState([]);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -136,7 +130,7 @@ function Search() {
         </div>
       </Row>
       <Row>
-        <CardDeck style={{ justifyContent: "flex-start" }}>
+        <CardDeck style={{ justifyContent: "center" }}>
           {results.map((element) => (
             <Cocktail
               style={{ display: "inline-block", justifyContent: "center" }}
