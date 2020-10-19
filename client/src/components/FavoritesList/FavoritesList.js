@@ -74,7 +74,6 @@ function Fav(props) {
     getFaveRecipes(props.favoriteIds);
   }, [props.customIds, props.favoriteIds]);
 
-
   return (
     <>
       <h2 className="favorites-title">My Custom Recipes</h2>
