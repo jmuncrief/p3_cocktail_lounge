@@ -22,15 +22,15 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 // Serve up static assets (usually on heroku)
+// Add routes, both API and view
+app.use(routes);
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
   app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, "client/build/index.html"))
   })
 }
-// Add routes, both API and view
-app.use(routes);
-
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/cocktail_lounge", {
   useUnifiedTopology: true,

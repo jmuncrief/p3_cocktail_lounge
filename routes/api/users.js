@@ -18,7 +18,7 @@ router
 
 router.route("/members").get(isAuthenticated, function (req, res) {
   console.log(req.user);
-  res.send({
+  res.json({
     id: req.user._id,
     name: `${_.upperFirst(req.user.f_name)} ${_.upperFirst(req.user.l_name)}`,
     favorites: req.user._favorites,
