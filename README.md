@@ -1,68 +1,30 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Cocktail Lounge
 
-## Available Scripts
+Cocktail Lounge is an application that retreives cocktail recipes from the [Open Cocktail DB](https://www.thecocktaildb.com/) in an easy to use graphical interface. Authenticated users can save favorite recipes for easy retrieval later.
 
-In the project directory, you can run:
+## Concept and Usage
 
-### `npm start`
+Cocktail Lounge was conceived of and built as a final project for the University of Arizona's Full-Stack Web Bootcamp. The interface is simple; a search bar, a dropdown, and a "random" button. Search results are dynamically written to the page with React and cleared when the next search is initiated. With the exception of the sign-up/sign-in page, Cocktail Lounge runs as a single parg application.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## The Team
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Jordan Muncrief
+* [GitHub](https://github.com/jmuncrief)
+* [LinkedIn](linkedin.com/in/jmuncrief)
 
-### `npm test`
+### Steven Jones
+* [GitHub](https://github.com/StevenSJones)
+* [LinkedIn](https://linkedin.com/in/steven-j-285a33115)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Cooper Seibert
+* [GitHub](https://github.com/cseibert2667)
+* [LinkedIn](https://linkedin.com/in/cooper-seibert-6a15b31b0)
+	
+### Rachel Sakles
+* [GitHub](https://github.com/rachelsakles)
+* [LinkedIn](https://linkedin.com/in/rachel-sakles-6a8a9b1ab)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Roadmap
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Cocktail Lounge is no longer in active development, but it remains an important codebase for the team that built it. A legacy deployed version of Cocktail Lounge can be found [here](https://cocktail-lounge.herokuapp.com)
